@@ -4904,15 +4904,13 @@ th.hide-for-touch {
 *
 **/
 .port-item {
-  width: 200px;
-  height: 200px;
-  border: 2px solid #fff;
+  width: 300px;
+  height: 300px;
   overflow: hidden;
   position: relative;
   text-align: center;
   box-shadow: 1px 1px 2px #e6e6e6;
-  cursor: default;
-  margin: 2px 0; }
+  cursor: default; }
   .port-item img {
     display: block;
     position: relative; }
@@ -4931,8 +4929,8 @@ th.hide-for-touch {
     text-align: center; }
 
 .mask {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   position: absolute;
   overflow: hidden;
   top: 0;
