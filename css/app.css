@@ -4964,3 +4964,6 @@ th.hide-for-touch {
 
 .sub-footer p {
   color: #fff; }
+
+svg {
+  height: 100%; }
