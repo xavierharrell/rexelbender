@@ -3,7 +3,7 @@ jQuery(document).ready(function($) {
     $(document).foundation();
 
     var $container = $('.port-container').isotope({
-    itemSelector: '.port-item',
+    itemSelector: '.slide',
     layoutMode: 'fitRows',
     animationEngine: 'best-available'
                                        });

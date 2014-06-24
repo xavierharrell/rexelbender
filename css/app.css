@@ -121,7 +121,43 @@ figure {
     padding: 1em;
     height: 3.75em;
     background: #fff;
-    color: #3c4a50; }
+    color: #3c4a50;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); }
+    figure .slide figcaption .slide h2 {
+      float: left; }
+    figure .slide figcaption .slide figcaption > span {
+      float: right; }
+    figure .slide figcaption .slide p {
+      position: absolute;
+      bottom: 8em;
+      padding: 2em;
+      color: #fff;
+      text-transform: none;
+      font-size: 90%;
+      opacity: 0;
+      -webkit-transition: opacity 0.35s;
+      transition: opacity0 0.35s; }
+    figure .slide figcaption .slide h2, figure .slide figcaption .slide figcaption > span {
+      -webkit-transition: -webkit-transform 0.35s;
+      transition: transform 0.35s;
+      -webkit-transform: translate3d(0, 200%, 0);
+      transform: translate3d(0, 200%, 0); }
+    figure .slide figcaption .slide figcaption > span::before {
+      display: inline-block;
+      padding: 8px 10px; }
+    figure .slide figcaption .slide h2 {
+      display: inline-block; }
+    figure .slide figcaption .slide p {
+      opacity: 1; }
+    figure .slide figcaption .slide:hover figcaption {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0); }
+    figure .slide figcaption .slide:hover h2 {
+      -webkit-transition-delay: 0.1s;
+      transition-delay: 0.1s; }
 
 /**
 *
