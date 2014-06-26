@@ -27,10 +27,11 @@
 
 /* End: Recommended Isotope styles */
 .hero {
-  background-image: url(img/hero.jpg);
-  -webkit-background-size: contain;
-  background-size: contain;
-  background: #fcbb0b; }
+  background: #fcbb0b;
+  height: 700px;
+  background-image: url(/img/hero.jpg);
+  -webkit-background-size: cover;
+  background-size: cover; }
 
 /**
 *
