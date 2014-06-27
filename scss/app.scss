@@ -1,6 +1,5 @@
 @import "settings";
-@import "isotope";
-@import "custom";
+
 // Or selectively include components
  @import
 //   "foundation/components/accordion",
@@ -38,3 +37,5 @@
    "foundation/components/type",
 //   "foundation/components/offcanvas",
    "foundation/components/visibility";
+@import "isotope";
+@import "custom";

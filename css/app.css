@@ -1,188 +1,3 @@
-/* Start: Recommended Isotope styles */
-/**** Isotope Filtering ****/
-.isotope-item {
-  z-index: 2; }
-
-.isotope-hidden.isotope-item {
-  pointer-events: none;
-  z-index: 1; }
-
-/**** Isotope CSS3 transitions ****/
-.isotope, .isotope .isotope-item {
-  -webkit-transition-duration: 0.8s;
-  transition-duration: 0.8s; }
-
-.isotope {
-  -webkit-transition-property: height, width;
-  transition-property: height, width; }
-
-.isotope .isotope-item {
-  -webkit-transition-property: -webkit-transform, opacity;
-  transition-property: transform, opacity; }
-
-/**** disabling Isotope CSS3 transitions ****/
-.isotope.no-transition, .isotope.no-transition .isotope-item, .isotope .isotope-item.no-transition {
-  -webkit-transition-duration: 0s;
-  transition-duration: 0s; }
-
-/* End: Recommended Isotope styles */
-.hero {
-  background: #fcbb0b;
-  height: 700px;
-  background-image: url(/img/hero.jpg);
-  -webkit-background-size: cover;
-  background-size: cover; }
-
-/**
-*
-* Portfolio Section
-*
-**/
-.port-container {
-  overflow: hidden;
-  margin: 0;
-  padding: 3em 0 0 0;
-  width: 100%;
-  list-style: none;
-  text-align: center; }
-
-figure {
-  position: relative;
-  z-index: 1;
-  display: inline-block;
-  overflow: hidden;
-  margin: -0.135em;
-  width: 25%;
-  height: 400px;
-  background: #3085a3;
-  text-align: center; }
-  figure img {
-    position: relative;
-    display: block;
-    min-height: 100%;
-    opacity: 0.8; }
-  figure figcaption {
-    padding: 2em;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 1.25em;
-    -webkit-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    backface-visibility: hidden; }
-  figure figcaption::before, figure figcaption::after {
-    pointer-events: none; }
-  figure figcaption, figure a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; }
-  figure a {
-    z-index: 1000;
-    text-indent: 200%;
-    white-space: nowrap;
-    font-size: 0;
-    opacity: 0; }
-  figure h2 {
-    word-spacing: -0.15em;
-    font-weight: 300; }
-    figure h2 span {
-      font-weight: 800; }
-  figure h2, figure p {
-    letter-spacing: 1px; }
-
-.slide {
-  background: #223040; }
-  .slide img {
-    width: -webkit-calc(100% + 20px);
-    width: calc(100% + 20px);
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: translate3d(10px, 0, 0);
-    -ms-transform: translate3d(10px, 0, 0);
-    transform: translate3d(10px, 0, 0);
-    -webkit-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    backface-visibility: hidden; }
-  .slide:hover img {
-    opacity: 0.4;
-    -webkit-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); }
-  .slide figcaption {
-    text-align: left; }
-  .slide h2 {
-    position: relative;
-    overflow: hidden;
-    padding: 0.5em 0; }
-    .slide h2::after {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 10px;
-      background: #fff;
-      content: '';
-      -webkit-transition: 0.35s;
-      transition: 0.35s;
-      -webkit-transform: 0.35s;
-      -ms-transform: 0.35s;
-      transform: 0.35s;
-      -webkit-transform: translate3d(-100%, 0, 0);
-      -ms-transform: translate3d(-100%, 0, 0);
-      transform: translate3d(-100%, 0, 0); }
-  .slide:hover h2::after {
-    -webkit-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); }
-  .slide p {
-    padding: 1em 0;
-    opacity: 0;
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: translate3d(100%, 0, 0);
-    -ms-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0); }
-  .slide:hover p {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); }
-
-@media screen and (max-width: 69.5em) {
-  .port-container figure {
-    width: 50%; } }
-
-@media screen and (max-width: 41.5em) {
-  .port-container figure {
-    width: 100%; } }
-
-/**
-*
-* Section Rows
-*
-**/
-.blue, .yellow, .sub-footer {
-  padding: 15px 0;
-  background-color: #223040; }
-  .blue h2, .blue .yellow, .blue .sub-footer {
-    color: #fff; }
-  .blue p, .blue .yellow, .blue .sub-footer {
-    color: #fff; }
-
-.yellow, .sub-footer {
-  background-color: #fcbb0b; }
-  .yellow p, .yellow .sub-footer {
-    color: #fff; }
-  .yellow h3, .yellow .sub-footer {
-    color: #fff; }
-
-.sub-footer p {
-  color: #fff; }
-
-svg {
-  height: 100%; }
-
 meta.foundation-version {
   font-family: "/5.2.3/"; }
 
@@ -3054,3 +2869,212 @@ th.hide-for-touch {
     display: table-cell !important; }
   th.show-for-print {
     display: table-cell !important; } }
+
+/* Start: Recommended Isotope styles */
+/**** Isotope Filtering ****/
+.isotope-item {
+  z-index: 2; }
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1; }
+
+/**** Isotope CSS3 transitions ****/
+.isotope, .isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+  transition-duration: 0.8s; }
+
+.isotope {
+  -webkit-transition-property: height, width;
+  transition-property: height, width; }
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+  transition-property: transform, opacity; }
+
+/**** disabling Isotope CSS3 transitions ****/
+.isotope.no-transition, .isotope.no-transition .isotope-item, .isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+  transition-duration: 0s; }
+
+/* End: Recommended Isotope styles */
+.hero {
+  background: #fcbb0b;
+  height: 700px;
+  background-image: url(/img/hero.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: fixed; }
+
+/**
+*
+* Portfolio Section
+*
+**/
+.portfolio {
+  overflow: hidden;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 -2em;
+  list-style: none;
+  text-align: center;
+  background: #223040; }
+
+figure {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  overflow: hidden;
+  margin: -0.135em;
+  width: 25%;
+  height: 400px;
+  background: #3085a3;
+  text-align: center; }
+  figure img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    opacity: 0.8; }
+  figure figcaption {
+    padding: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  figure figcaption::before, figure figcaption::after {
+    pointer-events: none; }
+  figure figcaption, figure a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  figure a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0; }
+  figure h2 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+    color: #fcbb0b; }
+    figure h2 span {
+      font-weight: 800; }
+  figure h2, figure p {
+    letter-spacing: 1px; }
+
+.slide {
+  background: #223040; }
+  .slide img {
+    width: -webkit-calc(100% + 40px);
+    width: calc(100% + 40px);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(10px, 0, 0);
+    -ms-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+    -webkit-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  .slide:hover img {
+    opacity: 0.4;
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  .slide figcaption {
+    text-align: left; }
+  .slide h2 {
+    position: relative;
+    overflow: hidden;
+    padding: 0.5em 0; }
+    .slide h2::after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 10px;
+      background: #fcbb0b;
+      content: '';
+      -webkit-transition: 0.35s;
+      transition: 0.35s;
+      -webkit-transform: 0.35s;
+      -ms-transform: 0.35s;
+      transform: 0.35s;
+      -webkit-transform: translate3d(-100%, 0, 0);
+      -ms-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0); }
+  .slide:hover h2::after {
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  .slide p {
+    padding: 1em 0;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(100%, 0, 0);
+    -ms-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0); }
+  .slide:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+
+.grid-sizer {
+  width: 24%; }
+
+.gutter-sizer {
+  width: 1.33%; }
+
+@media screen and (max-width: 69.5em) {
+  .portfolio figure {
+    width: 50%; } }
+
+@media screen and (max-width: 41.5em) {
+  .portfolio figure {
+    width: 100%; } }
+
+/**
+*
+* Section Rows
+*
+**/
+.blue, .yellow, .sub-footer {
+  padding: 15px 0;
+  background-color: #223040; }
+  .blue h2, .blue .yellow, .blue .sub-footer {
+    color: #fff; }
+  .blue p, .blue .yellow, .blue .sub-footer {
+    color: #fff; }
+
+.yellow, .sub-footer {
+  background-color: #fcbb0b; }
+  .yellow p, .yellow .sub-footer {
+    color: #fff; }
+  .yellow h3, .yellow .sub-footer {
+    color: #fff; }
+
+.sub-footer p {
+  color: #fff; }
+
+.portfolio-select {
+  margin: 0 auto 1.0625rem auto;
+  margin-left: -1.375rem;
+  margin-right: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden; }
+  .portfolio-select > li {
+    list-style: none;
+    float: left;
+    margin-left: 1.375rem;
+    display: block; }
+    .portfolio-select > li > * {
+      display: block; }
+  .portfolio-select li a {
+    padding: 0.25em;
+    border: 1px solid #fcbb0b; }

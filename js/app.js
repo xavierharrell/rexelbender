@@ -2,11 +2,11 @@ jQuery(document).ready(function($) {
     //Foundation Init
     $(document).foundation();
 
-    var $container = $('.port-container').isotope({
+    /*var $container = $('.portfolio').isotope({
     itemSelector: '.slide',
     layoutMode: 'fitRows',
-    animationEngine: 'best-available'
-                                       });
+
+                                         });
 
   // bind filter button click
   $('.filter-select').on( 'click', 'li a', function() {
@@ -14,7 +14,7 @@ jQuery(document).ready(function($) {
     // use filterFn if matches value
     $container.isotope({filter: filterValue });
         return false;
-  });
+  });*/
 
 
 
