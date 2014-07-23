@@ -186,3 +186,24 @@ figure {
 
     }
 }
+
+/**
+*
+* Everyday
+*
+**/
+
+.everyday-list{
+    @include inline-list;
+    margin-left: -0.25em;
+    li{
+        margin-left: 0.25em;
+        margin-bottom: 0.25em;
+    }
+}
+
+.portfolio-detail{
+    img{
+        margin-bottom: 1em;
+    }
+}
