@@ -16,7 +16,15 @@ jQuery(document).ready(function($) {
         return false;
   });*/
 
+// Magnific //
 
+$('.image-link').magnificPopup(
+  {
+    type:'image',
+    image: {
+      verticalFit: true
+    }
+  });
 
 
 });//End of Scripts

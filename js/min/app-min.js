@@ -1,0 +1,1 @@
+jQuery(document).ready(function($){$(document).foundation(),$(".image-link").magnificPopup({type:"image",image:{verticalFit:!0}})});
