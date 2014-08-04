@@ -2,10 +2,9 @@ jQuery(document).ready(function($) {
     //Foundation Init
     $(document).foundation();
 
-    /*var $container = $('.portfolio').isotope({
+    var $container = $('.portfolio').isotope({
     itemSelector: '.slide',
     layoutMode: 'fitRows',
-
                                          });
 
   // bind filter button click
@@ -14,7 +13,7 @@ jQuery(document).ready(function($) {
     // use filterFn if matches value
     $container.isotope({filter: filterValue });
         return false;
-  });*/
+  });
 
 // Magnific //
 
