@@ -13,16 +13,14 @@
 *
 **/
 
-.portfolio{
+.portfolio-container{
     overflow: hidden;
     margin: 0 auto;
     width: 100%;
-    padding: 0 -2em;
     list-style: none;
     text-align: center;
-    background: $secondary-color;
+    background: #ffffff;
 }
-
 
 figure.slide {
     position: relative;
@@ -38,7 +36,7 @@ figure.slide {
         position: relative;
         display: block;
         min-height: 100%;
-        opacity: 0.8;
+        opacity: 1;
     }
     figcaption {
         padding: 2em;
@@ -82,11 +80,11 @@ figure.slide {
     img {
         width: calc(100% + 40px);
         transition: opacity 0.35s, transform 0.35s;
-        transform: translate3d(10px, 0, 0);
+        transform: translate3d(0, 0, 0);
         backface-visibility: hidden;
     }
     &:hover img {
-        opacity: 0.4;
+        opacity: 0.8;
         transform: translate3d(0, 0, 0);
     }
     figcaption {
@@ -96,6 +94,9 @@ figure.slide {
         position: relative;
         overflow: hidden;
         padding: 0.5em 0;
+        opacity: 0;
+        transition: 0.35s;
+        transform: 0.35s;
         &::after {
             position: absolute;
             bottom: 0;
@@ -108,6 +109,9 @@ figure.slide {
             transform: 0.35s;
             transform: translate3d(-100%, 0, 0);
         }
+    }
+    &:hover h2{
+      opacity: 1.0;
     }
     &:hover h2::after {
         transform: translate3d(0, 0, 0);
@@ -158,6 +162,7 @@ figure.slide {
 
 .yellow {
     @extend .blue;
+    padding: 2em 0;
     background-color: $primary-color;
     p {
         color: #fff;

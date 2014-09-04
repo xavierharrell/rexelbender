@@ -5,10 +5,10 @@ jQuery(document).ready(function($) {
     var $container = $('.portfolio').isotope({
     itemSelector: '.slide',
     layoutMode: 'fitRows',
-                                         });
+     });
 
   // bind filter button click
-  $('.filter-select').on( 'click', 'li a', function() {
+  $('.portfolio-select').on( 'click', 'li a', function() {
     var filterValue = $( this ).attr('data-filter');
     // use filterFn if matches value
     $container.isotope({filter: filterValue });

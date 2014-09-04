@@ -1,1 +1,1 @@
-jQuery(document).ready(function($){$(document).foundation(),$(".image-link").magnificPopup({type:"image",image:{verticalFit:!0}})});
+jQuery(document).ready(function($){$(document).foundation();var t=$(".portfolio").isotope({itemSelector:".slide",layoutMode:"fitRows"});$(".portfolio-select").on("click","li a",function(){var i=$(this).attr("data-filter");return t.isotope({filter:i}),!1}),$(".image-link").magnificPopup({type:"image",image:{verticalFit:!0}})});
