@@ -352,12 +352,12 @@ $header-font-weight: 800;
 // $button-font-align: center;
 
 // We use these to control various hover effects.
-// $button-function-factor: -20%;
+$button-function-factor: 10%;
 
 // We use these to control button border styles.
 // $button-border-width: 0px;
 // $button-border-style: solid;
-// $button-bg: $primary-color;
+$button-bg: $secondary-color;
 // $button-border-color: scale-color($bg, $lightness: $button-function-factor);
 
 // We use this to set the default radius used throughout the core.

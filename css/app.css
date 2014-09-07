@@ -109,37 +109,37 @@ button, .button {
   padding-bottom: 1.0625rem;
   padding-left: 2rem;
   font-size: 1rem;
-  background-color: #fcbb0b;
-  border-color: #d09603;
+  background-color: #223040;
+  border-color: #30445b;
   color: #fff;
   -webkit-transition: background-color 300ms ease-out;
           transition: background-color 300ms ease-out; }
   button:hover, button:focus, .button:hover, .button:focus {
-    background-color: #d09603; }
+    background-color: #30445b; }
   button:hover, button:focus, .button:hover, .button:focus {
     color: #fff; }
   button.secondary, .button.secondary {
     background-color: #223040;
-    border-color: #1b2633;
+    border-color: #30445b;
     color: #fff; }
     button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
-      background-color: #1b2633; }
+      background-color: #30445b; }
     button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
       color: #fff; }
   button.success, .button.success {
     background-color: #43AC6A;
-    border-color: #368a54;
+    border-color: #4fbb77;
     color: #fff; }
     button.success:hover, button.success:focus, .button.success:hover, .button.success:focus {
-      background-color: #368a54; }
+      background-color: #4fbb77; }
     button.success:hover, button.success:focus, .button.success:hover, .button.success:focus {
       color: #fff; }
   button.alert, .button.alert {
     background-color: #f04124;
-    border-color: #cf280e;
+    border-color: #f1523a;
     color: #fff; }
     button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus {
-      background-color: #cf280e; }
+      background-color: #f1523a; }
     button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus {
       color: #fff; }
   button.large, .button.large {
@@ -175,57 +175,57 @@ button, .button {
   button.round, .button.round {
     border-radius: 1000px; }
   button.disabled, button[disabled], .button.disabled, .button[disabled] {
-    background-color: #fcbb0b;
-    border-color: #d09603;
+    background-color: #223040;
+    border-color: #30445b;
     color: #fff;
     cursor: default;
     opacity: 0.7;
     -webkit-box-shadow: none;
             box-shadow: none; }
     button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
-      background-color: #d09603; }
+      background-color: #30445b; }
     button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
       color: #fff; }
     button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
-      background-color: #fcbb0b; }
+      background-color: #223040; }
     button.disabled.secondary, button[disabled].secondary, .button.disabled.secondary, .button[disabled].secondary {
       background-color: #223040;
-      border-color: #1b2633;
+      border-color: #30445b;
       color: #fff;
       cursor: default;
       opacity: 0.7;
       -webkit-box-shadow: none;
               box-shadow: none; }
       button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
-        background-color: #1b2633; }
+        background-color: #30445b; }
       button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
         color: #fff; }
       button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
         background-color: #223040; }
     button.disabled.success, button[disabled].success, .button.disabled.success, .button[disabled].success {
       background-color: #43AC6A;
-      border-color: #368a54;
+      border-color: #4fbb77;
       color: #fff;
       cursor: default;
       opacity: 0.7;
       -webkit-box-shadow: none;
               box-shadow: none; }
       button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .button.disabled.success:focus, .button[disabled].success:hover, .button[disabled].success:focus {
-        background-color: #368a54; }
+        background-color: #4fbb77; }
       button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .button.disabled.success:focus, .button[disabled].success:hover, .button[disabled].success:focus {
         color: #fff; }
       button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .button.disabled.success:focus, .button[disabled].success:hover, .button[disabled].success:focus {
         background-color: #43AC6A; }
     button.disabled.alert, button[disabled].alert, .button.disabled.alert, .button[disabled].alert {
       background-color: #f04124;
-      border-color: #cf280e;
+      border-color: #f1523a;
       color: #fff;
       cursor: default;
       opacity: 0.7;
       -webkit-box-shadow: none;
               box-shadow: none; }
       button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .button.disabled.alert:focus, .button[disabled].alert:hover, .button[disabled].alert:focus {
-        background-color: #cf280e; }
+        background-color: #f1523a; }
       button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .button.disabled.alert:focus, .button[disabled].alert:hover, .button[disabled].alert:focus {
         color: #fff; }
       button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .button.disabled.alert:focus, .button[disabled].alert:hover, .button[disabled].alert:focus {
@@ -1933,34 +1933,34 @@ meta.foundation-mq-topbar {
         padding-right: 26.66667px;
         padding-left: 26.66667px;
         background-color: #fcbb0b;
-        border-color: #d09603;
+        border-color: #fcbf23;
         color: #fff; }
         .top-bar-section ul li > a.button:hover, .top-bar-section ul li > a.button:focus {
-          background-color: #d09603; }
+          background-color: #fcbf23; }
         .top-bar-section ul li > a.button:hover, .top-bar-section ul li > a.button:focus {
           color: #fff; }
       .top-bar-section ul li > a.button.secondary {
         background-color: #223040;
-        border-color: #1b2633;
+        border-color: #30445b;
         color: #fff; }
         .top-bar-section ul li > a.button.secondary:hover, .top-bar-section ul li > a.button.secondary:focus {
-          background-color: #1b2633; }
+          background-color: #30445b; }
         .top-bar-section ul li > a.button.secondary:hover, .top-bar-section ul li > a.button.secondary:focus {
           color: #fff; }
       .top-bar-section ul li > a.button.success {
         background-color: #43AC6A;
-        border-color: #368a54;
+        border-color: #4fbb77;
         color: #fff; }
         .top-bar-section ul li > a.button.success:hover, .top-bar-section ul li > a.button.success:focus {
-          background-color: #368a54; }
+          background-color: #4fbb77; }
         .top-bar-section ul li > a.button.success:hover, .top-bar-section ul li > a.button.success:focus {
           color: #fff; }
       .top-bar-section ul li > a.button.alert {
         background-color: #f04124;
-        border-color: #cf280e;
+        border-color: #f1523a;
         color: #fff; }
         .top-bar-section ul li > a.button.alert:hover, .top-bar-section ul li > a.button.alert:focus {
-          background-color: #cf280e; }
+          background-color: #f1523a; }
         .top-bar-section ul li > a.button.alert:hover, .top-bar-section ul li > a.button.alert:focus {
           color: #fff; }
     .top-bar-section ul li > button {
@@ -1968,34 +1968,34 @@ meta.foundation-mq-topbar {
       padding-right: 26.66667px;
       padding-left: 26.66667px;
       background-color: #fcbb0b;
-      border-color: #d09603;
+      border-color: #fcbf23;
       color: #fff; }
       .top-bar-section ul li > button:hover, .top-bar-section ul li > button:focus {
-        background-color: #d09603; }
+        background-color: #fcbf23; }
       .top-bar-section ul li > button:hover, .top-bar-section ul li > button:focus {
         color: #fff; }
       .top-bar-section ul li > button.secondary {
         background-color: #223040;
-        border-color: #1b2633;
+        border-color: #30445b;
         color: #fff; }
         .top-bar-section ul li > button.secondary:hover, .top-bar-section ul li > button.secondary:focus {
-          background-color: #1b2633; }
+          background-color: #30445b; }
         .top-bar-section ul li > button.secondary:hover, .top-bar-section ul li > button.secondary:focus {
           color: #fff; }
       .top-bar-section ul li > button.success {
         background-color: #43AC6A;
-        border-color: #368a54;
+        border-color: #4fbb77;
         color: #fff; }
         .top-bar-section ul li > button.success:hover, .top-bar-section ul li > button.success:focus {
-          background-color: #368a54; }
+          background-color: #4fbb77; }
         .top-bar-section ul li > button.success:hover, .top-bar-section ul li > button.success:focus {
           color: #fff; }
       .top-bar-section ul li > button.alert {
         background-color: #f04124;
-        border-color: #cf280e;
+        border-color: #f1523a;
         color: #fff; }
         .top-bar-section ul li > button.alert:hover, .top-bar-section ul li > button.alert:focus {
-          background-color: #cf280e; }
+          background-color: #f1523a; }
         .top-bar-section ul li > button.alert:hover, .top-bar-section ul li > button.alert:focus {
           color: #fff; }
     .top-bar-section ul li:hover:not(.has-form) > a {
@@ -2911,13 +2911,15 @@ th.hide-for-touch {
 * Portfolio Section
 *
 **/
-.portfolio-container {
+.portfolio-main {
   overflow: hidden;
-  margin: 0 auto;
+  margin-bottom: 2em;
   width: 100%;
-  list-style: none;
   text-align: center;
   background: #ffffff; }
+
+.port-holder {
+  width: 20%; }
 
 figure.slide {
   position: relative;
@@ -2926,16 +2928,15 @@ figure.slide {
   overflow: hidden;
   margin: -0.135em;
   width: 25%;
-  height: 400px;
-  background: #3085a3;
-  text-align: center; }
+  height: 350px;
+  background: #fcbb0b; }
   figure.slide img {
     position: relative;
     display: block;
     min-height: 100%;
     opacity: 1; }
   figure.slide figcaption {
-    padding: 2em;
+    padding: 1em;
     color: #fff;
     text-transform: uppercase;
     font-size: 1.25em;
@@ -2949,6 +2950,8 @@ figure.slide {
     left: 0;
     width: 100%;
     height: 100%; }
+  figure.slide p {
+    font-size: 0.7em; }
   figure.slide a {
     z-index: 1000;
     text-indent: 200%;
@@ -2958,83 +2961,83 @@ figure.slide {
   figure.slide h2 {
     word-spacing: -0.15em;
     font-weight: 300;
-    color: #fcbb0b; }
+    color: #223040; }
     figure.slide h2 span {
       font-weight: 800; }
   figure.slide h2, figure.slide p {
     letter-spacing: 1px; }
 
-.slide {
-  background: #223040; }
-  .slide img {
-    width: calc(100% + 40px);
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-            transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden; }
-  .slide:hover img {
-    opacity: 0.8;
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0); }
-  .slide figcaption {
-    text-align: left; }
-  .slide h2 {
-    position: relative;
-    overflow: hidden;
-    padding: 0.5em 0;
-    opacity: 0;
+.slide img {
+  width: calc(100% + 40px);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+          transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden; }
+.slide:hover img {
+  opacity: 0.1;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0); }
+.slide figcaption {
+  text-align: left; }
+.slide h2 {
+  position: relative;
+  overflow: hidden;
+  padding: 0.2em 0;
+  opacity: 0;
+  -webkit-transition: 0.35s;
+          transition: 0.35s;
+  -webkit-transform: 0.35s;
+      -ms-transform: 0.35s;
+          transform: 0.35s; }
+  .slide h2::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: #223040;
+    content: '';
     -webkit-transition: 0.35s;
             transition: 0.35s;
     -webkit-transform: 0.35s;
         -ms-transform: 0.35s;
-            transform: 0.35s; }
-    .slide h2::after {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 10px;
-      background: #fcbb0b;
-      content: '';
-      -webkit-transition: 0.35s;
-              transition: 0.35s;
-      -webkit-transform: 0.35s;
-          -ms-transform: 0.35s;
-              transform: 0.35s;
-      -webkit-transform: translate3d(-100%, 0, 0);
-              transform: translate3d(-100%, 0, 0); }
-  .slide:hover h2 {
-    opacity: 1; }
-  .slide:hover h2::after {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0); }
-  .slide p {
-    padding: 1em 0;
-    opacity: 0;
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-            transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: translate3d(100%, 0, 0);
-            transform: translate3d(100%, 0, 0); }
-  .slide:hover p {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0); }
-
-.grid-sizer {
-  width: 24%; }
-
-.gutter-sizer {
-  width: 1.33%; }
+            transform: 0.35s;
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0); }
+.slide:hover h2 {
+  opacity: 1; }
+.slide:hover h2::after {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0); }
+.slide p {
+  padding: 1em 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+          transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(100%, 0, 0);
+          transform: translate3d(100%, 0, 0); }
+.slide:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0); }
 
 @media screen and (max-width: 69.5em) {
-  .portfolio figure {
+  .portfolio figure, .portfolio-main figure {
     width: 50%; } }
 
 @media screen and (max-width: 41.5em) {
-  .portfolio figure {
+  .portfolio figure, .portfolio-main figure {
     width: 100%; } }
+
+@media screen and (max-width: 69.5em) {
+  .portfolio-main {
+    margin-bottom: 2em; } }
+
+@media screen and (max-width: 41.5em) {
+  .portfolio-main {
+    margin-bottom: 2em; } }
 
 /**
 *
@@ -3060,8 +3063,12 @@ figure.slide {
 .office {
   padding: 2em 0; }
 
-.sub-footer p {
-  color: #fff; }
+.sub-footer {
+  padding: 0.5em 0; }
+  .sub-footer p {
+    color: #fff; }
+  .sub-footer li a {
+    color: #ffffff; }
 
 .portfolio-select {
   margin: 0 auto 1.0625rem auto;
@@ -3069,7 +3076,8 @@ figure.slide {
   margin-right: 0;
   padding: 0;
   list-style: none;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-left: -2.5em; }
   .portfolio-select > li {
     list-style: none;
     float: left;

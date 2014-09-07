@@ -4,7 +4,7 @@ jQuery(document).ready(function($) {
 
     var $container = $('.portfolio').isotope({
     itemSelector: '.slide',
-    layoutMode: 'fitRows',
+    layoutMode: 'masonry'
      });
 
   // bind filter button click
@@ -17,13 +17,13 @@ jQuery(document).ready(function($) {
 
 // Magnific //
 
-$('.image-link').magnificPopup(
-  {
-    type:'image',
-    image: {
-      verticalFit: true
-    }
-  });
+// $('.image-link').magnificPopup(
+//   {
+//     type:'image',
+//     image: {
+//       verticalFit: true
+//     }
+//   });
 
 
 });//End of Scripts
