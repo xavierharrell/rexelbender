@@ -17,13 +17,13 @@ jQuery(document).ready(function($) {
 
 // Magnific //
 
-// $('.image-link').magnificPopup(
-//   {
-//     type:'image',
-//     image: {
-//       verticalFit: true
-//     }
-//   });
+$('.image-link').magnificPopup(
+  {
+    type:'image',
+    image: {
+      verticalFit: true
+    }
+  });
 
 
 });//End of Scripts
