@@ -1,10 +1,52 @@
 {
-  "name": "foundation-libsass-template",
-  "version": "0.0.1",
+  "name": "xavier-harrell-site-v.2.0",
+  "version": "0.1.1",
+  "description": "New portfolio site",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/xavierharrell/xavierharrell.git"
+  },
+  "browser": {
+    "underscore": "backbone/node_modules/underscore"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim",
+      "coffeeify",
+      "hbsfy"
+    ]
+  },
+  "browserify-shim": {
+  },
   "devDependencies": {
-    "node-sass": "~0.7.0",
-    "grunt": "~0.4.1",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt-sass": "~0.8.0"
+    "browser-sync": "~1.3.6",
+    "browserify": "^8.0.2",
+    "browserify-shim": "^3.8.2",
+    "coffeeify": "~0.7.0",
+    "gulp": "^3.8.7",
+    "gulp-autoprefixer": "^2.0.0",
+    "gulp-changed": "^0.4.1",
+    "gulp-filesize": "0.0.6",
+    "gulp-iconfont": "^1.0.0",
+    "gulp-imagemin": "^0.6.2",
+    "gulp-minify-css": "^0.3.11",
+    "gulp-notify": "^1.4.2",
+    "gulp-sass": "~1.3.1",
+    "gulp-rename": "^1.2.0",
+    "gulp-sourcemaps": "^1.2.8",
+    "gulp-swig": "^0.7.4",
+    "gulp-uglify": "^1.0.2",
+    "gulp-util": "^3.0.0",
+    "handlebars": "^1.3.0",
+    "hbsfy": "~2.0.0",
+    "lodash": "^2.4.1",
+    "pretty-hrtime": "~0.2.1",
+    "require-dir": "^0.1.0",
+    "vinyl-source-stream": "~0.1.1",
+    "watchify": "^2.2.1"
+  },
+  "dependencies": {
+    "backbone": "~1.1.2",
+    "jquery": "~2.1.0"
   }
 }
