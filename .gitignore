@@ -1,7 +1,5 @@
 .DS_Store
-
-scss/.sass-cache/
-config.codekit
-
-IMAGES TO BE MADE/
-jsgithub/
+.sass-cache
+build
+Desktop.ini
+node_modules
