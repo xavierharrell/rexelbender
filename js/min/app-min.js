@@ -1,1 +1,0 @@
-jQuery(document).ready(function($){$(document).foundation();var t=$(".portfolio").isotope({itemSelector:".slide",layoutMode:"masonry"});$(".portfolio-select").on("click","li a",function(){var i=$(this).attr("data-filter");return t.isotope({filter:i}),!1}),$(".image-link").magnificPopup({type:"image",image:{verticalFit:!0}})});
