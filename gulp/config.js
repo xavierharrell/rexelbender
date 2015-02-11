@@ -9,7 +9,7 @@ module.exports = {
     }
   },
   sass: {
-    src: src + "/sass/*.{sass,scss}",
+    src: src + "/sass/**/*.{sass,scss}",
     dest: dest,
     settings: {
       indentedSyntax: true, // Enable .sass syntax!
@@ -40,7 +40,7 @@ module.exports = {
     }, {
       entries: src + '/javascript/page.js',
       dest: dest,
-      outputName: 'page.js',
+      outputName: 'main.js',
       // list of externally available modules to exclude from the bundle
       external: ['jquery', 'underscore']
     }]
