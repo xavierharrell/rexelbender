@@ -1,0 +1,64 @@
+.main-content {
+    min-height: 100%;
+    position: relative;
+    background-color: $white;
+    z-index: $content-zindex;
+    padding-top: $header-S;
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibilty: hidden;
+    @include transition-property(transform);
+    @include transition-duration(0.4s);
+    &.lateral-menu-is-open {
+        @include transform(translateX(-260px));
+    }
+    @include media($xxmedium) {
+        padding-top: $header-M;
+    }
+}
+
+/* Large Image Hero */
+
+.hero {
+    @include background(url("images/hero.jpg"), no-repeat, center center fixed);
+    background-size: cover;
+    margin: 0 auto;
+    height: 450px;
+}
+
+/* Selling Points */
+.selling-points {
+    @include clearfix;
+    position: relative;
+    .selling-point {
+        display: block;
+        text-align: center;
+        @include media($xxmedium) {
+            @include span-columns(4);
+        }
+    }
+}
+
+/* Skill Points */
+.skills {
+    position: relative;
+    @include clearfix;
+    .skill-point {
+        text-align: center;
+        @include media($xxmedium) {
+            @include span-columns(4);
+            @include omega(3n);
+        }
+    }
+}
+
+/* Portfolio Billboard */
+.portfolio-billboard {
+    position: relative;
+    @include clearfix;
+    .billboard-block{
+        float: left;
+        width: 100%;
+        margin: 0;
+        @include media($xxmedium) {}
+    }
+}
