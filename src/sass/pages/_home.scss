@@ -27,10 +27,10 @@
 
 /* Selling Points */
 .selling-points {
+    @include outer-container;
     @include clearfix;
     position: relative;
     .selling-point {
-        display: block;
         text-align: center;
         @include media($xxmedium) {
             @include span-columns(4);
@@ -40,13 +40,18 @@
 
 /* Skill Points */
 .skills {
-    position: relative;
+    @include outer-container;
     @include clearfix;
     .skill-point {
         text-align: center;
+        @include media($small) {
+            @include span-columns(6);
+            @include omega;
+        }
+
         @include media($xxmedium) {
             @include span-columns(4);
-            @include omega(3n);
+            @include omega;
         }
     }
 }
@@ -55,10 +60,104 @@
 .portfolio-billboard {
     position: relative;
     @include clearfix;
-    .billboard-block{
+    text-align: center;
+    padding: 1em 0 4em;
+    width: 100%;
+    figure {
+        position: relative;
         float: left;
-        width: 100%;
         margin: 0;
-        @include media($xxmedium) {}
+        height: 350px;
+        cursor: pointer;
+        overflow: hidden;
+        background: white;
+        text-align: center;
+        &:last-child {
+            margin-right: 0;
+        }
+        img {
+            position: relative;
+            min-height: 100%;
+            max-width: 100%;
+            opacity: 0.8;
+        }
+        figcaption {
+            padding: 2em;
+            background-color: $gold;
+            text-transform: uppercase;
+            -webkit-backface-visibility: hidden;
+            backface-visibiity: hidden;
+            &::before, &:after {
+                pointer-events: none;
+            }
+        }
+        figcaption, figcaption a {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        figcaption > a {
+            z-index: 1000;
+            text-indent: 200%;
+            white-space: nowrap;
+            font-size: 0;
+            opacity: 0;
+        }
+        h2 {
+            word-spacing: 0.15em;
+            font-weight: 800;
+        }
+        h2, p {
+            margin: 0;
+        }
+        p {
+            letter-spacing: 1px;
+            font-size: $base-font-size * 3.25;
+        }
+    }
+}
+
+figure.billboard--overlay {
+    background-color: darken($blue, 20%);
+    img, h2 {
+        -webkit-transition: -webkit-transform 0.35s;
+        transition: transform 0.35s;
+    }
+    img {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+        h2, p {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 20px;
+        color: white;
+    }
+    h2{
+        font-size: $base-font-size * 2.25;
+    }
+    p {
+        text-transform: none;
+        font-size: $base-font-size * 1.25;
+        opacity: 0;
+        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+        transition: opacity 0.35s, transform 0.35s;
+        -webkit-transform: translate3d(0, 30px, 0);
+        transform: translate3d(0, 30px, 0);
+    }
+    &:hover img {
+        -webkit-transform: translate3d(0, -180px, 0);
+        transform: translate3d(0, -180px, 0);
+    }
+    &:hover h2 {
+        -webkit-transform: translate3d(0, -30px, 0);
+        transform: translate3d(0, -30px, 0);
+    }
+    &:hover p {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
     }
 }
