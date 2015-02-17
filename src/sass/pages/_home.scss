@@ -75,6 +75,12 @@
         &:last-child {
             margin-right: 0;
         }
+        @include media($xxmedium){
+            width: 50%;
+        }
+        @include media($xxlarge){
+            width: 25%;
+        }
         img {
             position: relative;
             min-height: 100%;
@@ -128,14 +134,14 @@ figure.billboard--overlay {
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
     }
-        h2, p {
+    h2, p {
         position: absolute;
         bottom: 0;
         left: 0;
         padding: 20px;
         color: white;
     }
-    h2{
+    h2 {
         font-size: $base-font-size * 2.25;
     }
     p {
@@ -160,4 +166,8 @@ figure.billboard--overlay {
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
     }
+}
+
+.contact-now{
+    @include outer-container();
 }

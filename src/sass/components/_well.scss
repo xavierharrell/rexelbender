@@ -1,0 +1,17 @@
+.well{
+	padding: 2em;
+	display:block;
+	background-color: $silver;
+	border: 1px solid darken($silver, 10%);
+	margin: 1em 0;
+	box-shadow: 0 2px 1px lighten($silver, 10%);
+	font-weight: 800;
+}
+
+.well{
+	&--blue{
+		background-color: lighten($blue, 20%);
+		border: 1px solid darken($blue, 15%);
+		color: #fff;
+	}
+}

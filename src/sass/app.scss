@@ -1,19 +1,17 @@
 @import "base/reset";
-// @import "base/grid-color";
-@import "base/colors";
-@import "base/media-queries";
-@import "base/media";
-
-
-@import "utils/helpers";
-@import "utils/mixins";
-
 @import "vendor/bourbon/bourbon";
 @import "vendor/base/grid-settings";
 @import "vendor/neat/neat";
 @import "vendor/base/base";
 
+@import "utils/helpers";
+@import "utils/mixins";
 
+
+// @import "base/grid-color";
+@import "base/colors";
+@import "base/media-queries";
+@import "base/media";
 @import "base/type";
 
 @import "partials/layout";
@@ -23,3 +21,6 @@
 @import "pages/home";
 @import "pages/portfolio";
 @import "pages/portfolio-single";
+
+@import "components/button";
+@import "components/well";

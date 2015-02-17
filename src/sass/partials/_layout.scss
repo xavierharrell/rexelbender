@@ -2,6 +2,24 @@
 	@include outer-container;
 }
 
+.constrain-small{
+	@include outer-container(80%);
+}
+
 .padding-big{
 	padding: 3em 0 0;
 }
+
+/*================================
+=            Utlities;
+================================*/
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+/*-----  End of Utlities;  ------*/
+

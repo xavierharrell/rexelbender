@@ -1,0 +1,50 @@
+$social: (twitter, $twitter), (vimeo, $vimeo), (behance, $behance), (github, $github);
+
+@each $social, $color in $social {
+    .social-link--#{$social} {
+        color: $color;
+        transition: color, .2s, ease-in;
+        &:focus,
+        &:hover {
+            color: darken($color, 20%);
+        }
+    }
+}
+
+.footer {
+    background-color: lighten($blue, 2%);
+    border-top: 2px solid darken($blue, 5%);
+    padding: 4em;
+    min-height: 12.5em;
+    text-align: center;
+}
+
+.social-list {
+    display: block;
+    position: relative;
+    text-align: center;
+    padding-right: 1em;
+    a {
+        float: left;
+        padding: 0 3em 0 0;
+    }
+}
+
+.social-link {
+    @include centerer;
+}
+
+.social-link {
+    &--twitter {
+        color: $twitter;
+    }
+    &--vimeo {
+        color: $vimeo;
+    }
+    &--behance {
+        color: $behance;
+    }
+    &--github {
+        color: $github;
+    }
+}

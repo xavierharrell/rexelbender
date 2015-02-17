@@ -1,0 +1,35 @@
+.entry-hero{
+	background-size: cover;
+	height: 20%;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.entry-details{
+	
+}
+
+.entry-desc{
+	@include media($xxmedium){
+		@include span-columns(6);
+	}
+}
+
+.entry-skills{
+	@include media($xxmedium){
+		@include span-columns(6);
+	}
+}
+
+.entry-small{
+	float: left;
+	width: 50%;
+}
+
+.entry-large{
+	max-width: 100%;
+}
+.more-entries{
+	@include clearfix;
+	@include outer-container;
+}
