@@ -5,11 +5,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Xavier Harrell | Creative Direction - Motion Graphics - User Experience</title>
-    <link rel="stylesheet" href="css/app.css">
+    <title>Xavier Harrell | Creative Direction - Motion Grpahics - User Experience</title>
+    <link rel="stylesheet" href="app.css">
     <!-- Fonts -->
-    <script type="text/javascript" src="//use.typekit.net/bnw6ouj.js"></script>
-    <script type="text/javascript">
+    <script src="//use.typekit.net/bnw6ouj.js"></script>
+    <script>
     try {
         Typekit.load();
     } catch (e) {}
@@ -17,115 +17,97 @@
 </head>
 
 <body>
-    <div class="contain-to-grid fixed">
-        <!-- Nav -->
-        <nav class="top-bar" data-topbar>
-            <ul class="title-area">
-                <li class="name">
-                    <h1><a href="#">Something</a>
-                    </h1>
+    <header>
+        <a href="#0" id="logo"><img src="http://placehold.it/30x30" alt="">
+        </a>
+        <nav id="top-nav">
+            <ul>
+                <li><a href="portfolio.html">Portfolio</a>
                 </li>
-                <li class="toggle-topbar menu-icon"><a href="#">Menu</a>
+                <li><a href="portfolio-single.html">Portfolio Entry</a>
+                </li>
+                <li><a href="about.html">About Me</a>
+                </li>
+                <li><a href="contact.html">Contact</a>
+                </li>
+                <li><a href="contact-thanks">Contact Thanks</a>
                 </li>
             </ul>
-            <section class="top-bar-section">
-                <ul class="left">
-                    <li><a href="">What I Do</a>
-                    </li>
-                    <li><a href="">Skills</a>
-                    </li>
-                    <li><a href="">Portfolio</a>
-                    </li>
-                    <li><a href="">About Me</a>
-                    </li>
-                    <li><a href="">Contact Me</a>
-                    </li>
-                </ul>
-            </section>
         </nav>
-    </div>
-    <!-- End of Nav -->
-    <section>
-        <div class="row">
-          <div class="small-12 medium-12 large-12 columns">
-              <h1>Portfolio</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, velit!</p>
-          </div>
-        </div>
-        <div class="row">
-      <div class="small-12 medium-12 large-12 columns">
-          <ul class="portfolio-select">
-              <li><a data-filter= "*" href="">All</a></li>
-              <li><a data-filter= ".graphic" href="">Graphic Design</a></li>
-              <li><a href="" data-filter=".identity">Identity</a></li>
-              <li><a href="" data-filter=".illustration">Illustration</a></li>
-              <li><a href="" data-filter=".motion">Motion</a></li>
-            <li><a href="" data-filter=".web-design">Web Design</a></li>
-          </ul>
-      </div>
-    </div>
-    </section>
-    <!-- Porfolio -->
-    <section class="portfolio">
-    <div class="port-holder"></div>
-              <figure class="slide">
-        <img src="http://placehold.it/475x350" alt="">
-            <figcaption>
-                <h2>Title</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <p class="button small">Visit Project</p>
-            </figcaption>
-        </figure>
-        <figure class="slide">
-        <img src="http://placehold.it/475x350" alt="">
-            <figcaption>
-                <h2>Title</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <p class="button small">Visit Project</p>
-            </figcaption>
-        </figure>
-        <figure class="slide">
-        <img src="http://placehold.it/475x350" alt="">
-            <figcaption>
-                <h2>Title</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <p class="button small">Visit Project</p>
-            </figcaption>
-        </figure>
-        <figure class="slide">
-        <img src="http://placehold.it/475x350" alt="">
-            <figcaption>
-                <h2>Title</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <p class="button small">Visit Project</p>
-            </figcaption>
-        </figure>
-        <figure class="slide">
-        <img src="http://placehold.it/475x350" alt="">
-            <figcaption>
-                <h2>Title</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <p class="button small">Visit Project</p>
-            </figcaption>
-        </figure>
-    </section>
-    <!-- End of Portfolio -->
-    <footer class="blue">
-        <div class="row">
-            <div class="small-6 medium-6 large-6 columns">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet velit accusamus laborum. Culpa consequuntur explicabo nam dicta modi magnam eligendi?</p>
-            </div>
-            <div class="small-6 medium-6 large-6 columns">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, labore.</p>
-            </div>
-        </div>
+        <a href="#0" id="menu-trigger"><span class="menu-text">Menu</span><span class="menu-icon"></span></a>
+    </header>
+    <main class="main-content">
+        <section class="portfolio-grid">
+        <h1>Portfolio Page Title</h1>
+            <ul>
+                <li class="portfolio--block">
+                    <img class="portfolio--image" src="http://lorempixel.com/300/300" alt="">
+                    <p class="portfolio--title">Lorem ipsum dolor sit amet.</p>
+                    <a class="portfolio--index" href="#0"></a>
+                </li>
+                 <li class="portfolio--block">
+                    <img class="portfolio--image" src="http://lorempixel.com/300/300" alt="">
+                    <p class="portfolio--title">Lorem ipsum dolor sit amet.</p>
+                    <a class="portfolio--index" href="#0"></a>
+                </li>
+                 <li class="portfolio--block">
+                    <img class="portfolio--image" src="http://lorempixel.com/300/300" alt="">
+                    <p class="portfolio--title">Lorem ipsum dolor sit amet.</p>
+                    <a class="portfolio--index" href="#0"></a>
+                </li>
+                 <li class="portfolio--block">
+                    <img class="portfolio--image" src="http://lorempixel.com/300/300" alt="">
+                    <p class="portfolio--title">Lorem ipsum dolor sit amet.</p>
+                    <a class="portfolio--index" href="#0"></a>
+                </li>
+                <li class="portfolio--block">
+                    <img class="portfolio--image" src="http://lorempixel.com/300/300" alt="">
+                    <p class="portfolio--title">Lorem ipsum dolor sit amet.</p>
+                    <a class="portfolio--index" href="#0"></a>
+                </li>
+                 <li class="portfolio--block">
+                    <img class="portfolio--image" src="http://lorempixel.com/300/300" alt="">
+                    <p class="portfolio--title">Lorem ipsum dolor sit amet.</p>
+                    <a class="portfolio--index" href="#0"></a>
+                </li>
+                 <li class="portfolio--block">
+                    <img class="portfolio--image" src="http://lorempixel.com/300/300" alt="">
+                    <p class="portfolio--title">Lorem ipsum dolor sit amet.</p>
+                    <a class="portfolio--index" href="#0"></a>
+                </li>
+                 <li class="portfolio--block">
+                    <img class="portfolio--image" src="http://lorempixel.com/300/300" alt="">
+                    <p class="portfolio--title">Lorem ipsum dolor sit amet.</p>
+                    <a class="portfolio--index" href="#0"></a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer">
+        <ul class="social-list">
+            <li><a class="social-link--twitter" href="#0">Twitter</a>
+            </li>
+            <li><a class="social-link--vimeo" href="#0">Vimeo</a>
+            </li>
+            <li><a class="social-link--behance" href="#0">Behance</a>
+            </li>
+            <li><a class="social-link--github" href="#0">GitHub</a>
+            </li>
+        </ul>
     </footer>
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script src="bower_components/isotope/jquery.isotope.min.js"></script>
-    <script src="bower_components/velocity/jquery.velocity.min.js"></script>
-    <script src="bower_components/velocity/velocity.ui.js"></script>
-    <script src="js/app.js"></script>
+    </main>
+    <nav id="lateral-nav">
+        <ul class="navigation">
+            <li><a href="#0">Portfolio</a>
+            </li>
+            <li><a href="#0">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- End of Nav -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="global.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
