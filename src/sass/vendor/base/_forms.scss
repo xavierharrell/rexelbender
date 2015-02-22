@@ -15,8 +15,8 @@ select {
 
 label {
   font-weight: 600;
-  margin-bottom: $small-spacing / 2;
-
+  margin: 0.5em 0;
+  text-transform: uppercase;
   &.required::after {
     content: "*";
   }
@@ -36,7 +36,7 @@ textarea {
   box-sizing: border-box;
   font-family: $base-font-family;
   font-size: $base-font-size;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
   padding: $base-spacing / 3;
   transition: border-color;
   width: 100%;
