@@ -1,25 +1,24 @@
-.constrain{
-	@include outer-container;
+.constrain {
+    @include outer-container(90%);
+    @include media($xxmedium) {
+        @include outer-container(80%);
+    }
 }
 
-.constrain-small{
-	@include outer-container(80%);
+.padding-big {
+    padding: 3em 0 0;
 }
 
-.padding-big{
-	padding: 3em 0 0;
-}
 
 /*================================
 =            Utlities;
 ================================*/
-.left{
-	float: left;
+.left {
+    float: left;
 }
 
-.right{
-	float: right;
+.right {
+    float: right;
 }
 
 /*-----  End of Utlities;  ------*/
-
