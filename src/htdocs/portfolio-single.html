@@ -30,7 +30,7 @@
                 </li>
                 <li><a href="contact.html">Contact</a>
                 </li>
-                <li><a href="contact-thanks">Contact Thanks</a>
+                <li><a href="contact-thanks.html">Contact Thanks</a>
                 </li>
             </ul>
         </nav>
@@ -38,17 +38,17 @@
     </header>
     <main class="main-content">
         <section>
-            <img class="entry-hero" src="http://placehold.it/2000x400" alt="">
+            <img class="entry-hero" src="http://placehold.it/2000x1000" alt="">
         </section>
-        <section class="entry-details constrain-small">
+        <section class="entry-details constrain">
             <div class="entry-desc">
-                <h1>Entry Title</h1>
+                <h1 class="header--large">Entry Title</h1>
                 <div class="well well--blue">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis voluptatum commodi sequi ea, qui, eveniet.</p>
                 </div>
             </div>
             <div class="entry-skills">
-                <h2>Skills</h2>
+                <h2 class="header--medium">Skills</h2>
                 <ul>
                     <li>Lorem ipsum dolor.</li>
                     <li>Lorem ipsum dolor.</li>
@@ -59,21 +59,48 @@
                 </ul>
             </div>
         </section>
-        <section class="entry-images constrain-small">
+        <section class="entry-images constrain">
             <ul>
-                <li class="entry-small"><img src="http://lorempixel.com/400/400" alt=""></li>
-                <li class="entry-small"><img src="http://lorempixel.com/400/400" alt=""></li>
-                <li class="entry-large"><img src="http://lorempixel.com/1500/400" alt=""></li>
-                <li><img src="http://lorempixel.com/400/400" alt=""></li>
-                <li><img src="http://lorempixel.com/400/400" alt=""></li>
+                <li class="entry-small">
+                    <figure>
+                        <img
+                        srcset="
+                        http://lorempixel.com/1580/1000 1580w,
+                        http://lorempixel.com/1100/1000 1100w,
+                        http://lorempixel.com/600/1000 600w
+                        "
+                         src="http://lorempixel.com/1580/1000" alt="">
+                    </figure>
+                </li>
+                <li class="entry-small">
+                    <figure>
+                        <img
+                        srcset="
+                        http://lorempixel.com/1580/1000 1580w,
+                        http://lorempixel.com/1100/1000 1100w,
+                        http://lorempixel.com/600/1000 600w
+                        "
+                         src="http://lorempixel.com/1580/1000" alt="">
+                    </figure>
+                </li>
+                <li class="entry-large">
+                    <figure>
+                        <img
+                        srcset="
+                        http://lorempixel.com/1580/1000 1580w,
+                        http://lorempixel.com/1100/1000 1100w,
+                        http://lorempixel.com/600/1000 600w
+                        "
+                         src="http://lorempixel.com/1580/1000" alt="">
+                    </figure>
+                </li>
             </ul>
             <div class="more-entries">
                 <a href="#0" class="btn left">Previous Entry</a>
                 <a href="#0" class="btn right">Next Entry</a>
             </div>
         </section>
-    </main>
-    <footer class="footer">
+<footer class="footer">
         <ul class="social-list">
             <li><a class="social-link--twitter" href="#0">Twitter</a>
             </li>
