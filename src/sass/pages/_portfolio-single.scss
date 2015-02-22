@@ -1,35 +1,64 @@
-.entry-hero{
-	background-size: cover;
-	height: 20%;
-	background-repeat: no-repeat;
-	background-position: center center;
+.entry-hero {
+    background-size: cover;
+    height: 75%;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
-.entry-details{
-	
+.entry-details {
+	padding: 3em 0;
+
 }
 
-.entry-desc{
-	@include media($xxmedium){
-		@include span-columns(6);
-	}
+.entry-desc {
+    @include media($xxmedium) {
+        @include span-columns(8);
+    }
 }
 
-.entry-skills{
-	@include media($xxmedium){
-		@include span-columns(6);
-	}
+.entry-skills {
+    @include media($xxmedium) {
+        @include span-columns(4);
+    }
 }
 
-.entry-small{
+.entry-small {
+    float: left;
+    width: 100%;
+    margin-bottom: 1em;
+    figure {
+        display: block;
+        overflow: hidden;
+        margin: 0;
+        position: relative;
+    }
+    img {
+        display: block;
+        width: 100%;
+    }
+    @include media($xxmedium) {
+        @include span-columns(6);
+        @include omega(2n);
+    }
+}
+
+.entry-large {
 	float: left;
-	width: 50%;
+	margin-bottom: 1em;
+
+	figure{
+		display: block;
+		overflow: hidden;
+		position: relative;
+		margin: 0;
+	}
+	img{
+		display: block;
+		width: 100%;
+	}
 }
 
-.entry-large{
-	max-width: 100%;
-}
-.more-entries{
-	@include clearfix;
-	@include outer-container;
+.more-entries {
+    @include clearfix;
+    @include outer-container;
 }
