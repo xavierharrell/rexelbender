@@ -15,29 +15,33 @@
     } catch (e) {}
     </script>
 </head>
-
 <body>
-    <header>
-        <a href="#0" id="logo"><img src="http://placehold.it/30x30" alt="">
-        </a>
-        <nav id="top-nav">
-            <ul>
-                <li><a href="portfolio.html">Portfolio</a>
-                </li>
-                <li><a href="portfolio-single.html">Portfolio Entry</a></li>
-                <li><a href="about.html">About Me</a>
-                </li>
-                <li><a href="contact.html">Contact</a>
-                </li>
-                <li><a href="contact-thanks.html">Contact Thanks</a></li>
-            </ul>
-        </nav>
-        <a href="#0" id="menu-trigger"><span class="menu-text">Menu</span><span class="menu-icon"></span></a>
-    </header>
+<header class="centered-navigation is-fixed" role="banner">
+  <div class="centered-navigation-wrapper">
+    <a href="#0" class="mobile-logo">
+      <img src="http://placehold.it/75x75" alt="Logo image">
+    </a>
+    <a href="#0" id="js-centered-navigation-mobile-menu" class="centered-navigation-mobile-menu">MENU</a>
+    <nav role="navigation">
+      <ul id="js-centered-navigation-menu" class="centered-navigation-menu show">
+      <li class="nav-link logo">
+          <a href="#0" class="logo">
+            <img src="http://placehold.it/175x100" alt="RexelBender">
+          </a>
+        </li>
+        <li class="nav-link"><a href="portfolio.html">Portfolio</a></li>
+        <li class="nav-link"><a href="about.html">About Me</a></li>
+        <li class="nav-link"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
     <main class="main-content">
         <div class="hero">
         </div>
-        <section class="selling-points padding-big constrain">
+        <section class="selling-points padding-big constrain center">
+            <h2 class="header--large">Selling Points</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates autem corporis provident maxime illo numquam esse, saepe non doloribus officiis!</p>
             <!-- Selling Points -->
             <div class="selling-point">
                 <object class="large-icon" data="images/creative-direction-01.svg" type="image/svg+xml"></object>
@@ -56,7 +60,7 @@
             </div>
         </section>
         <!-- End of Selling Points -->
-        <section class="skills padding-big constrain">
+        <section class="skills padding-big constrain center">
             <h3 class="header--large">Skillset</h3>
             <div class="skill-point">
                 <object class="icon" data="images/Photoshop-02.svg" type="image/svg+xml"></object>
@@ -128,10 +132,11 @@
                 </figcaption>
             </figure>
         </section>
-        <section class="contact-now constrain">
-            <h3>Lorem ipsum dolor sit amet.</h3>
+        <section class="contact-now constrain center">
+            <h3 class="header--title">Lorem ipsum dolor sit amet.</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, nihil.</p>
-            <p><a href="contact.html" class="btn">Contact Now</a></p>
+            <p><a href="contact.html" class="btn">Contact Now</a>
+            </p>
         </section>
         <footer class="footer">
             <ul class="social-list">
@@ -146,15 +151,6 @@
             </ul>
         </footer>
     </main>
-    <nav id="lateral-nav">
-        <ul class="navigation">
-            <li><a href="#0">Portfolio</a>
-            </li>
-            <li><a href="#0">Contact</a>
-            </li>
-        </ul>
-    </nav>
-    <!-- End of Nav -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="global.js"></script>
     <script src="main.js"></script>
