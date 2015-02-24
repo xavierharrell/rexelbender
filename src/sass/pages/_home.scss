@@ -1,21 +1,7 @@
 .main-content {
     min-height: 100%;
-    position: relative;
-    background-color: $white;
-    z-index: $content-zindex;
-    padding-top: $header-S;
-    -webkit-transform: translateZ(0);
-    -webkit-backface-visibilty: hidden;
-    @include transition-property(transform);
-    @include transition-duration(0.4s);
-    &.lateral-menu-is-open {
-        @include transform(translateX(-260px));
-    }
-    @include media($xxmedium) {
-        padding-top: $header-M;
-    }
+    padding-top: 8em;
 }
-
 /* Large Image Hero */
 
 .hero {
@@ -24,8 +10,8 @@
     margin: 0 auto;
     height: 450px;
 }
-
 /* Selling Points */
+
 .selling-points {
     @include outer-container;
     @include clearfix;
@@ -37,8 +23,8 @@
         }
     }
 }
-
 /* Skill Points */
+
 .skills {
     @include outer-container;
     @include clearfix;
@@ -48,15 +34,14 @@
             @include span-columns(6);
             @include omega;
         }
-
         @include media($xxmedium) {
             @include span-columns(4);
             @include omega;
         }
     }
 }
-
 /* Portfolio Billboard */
+
 .portfolio-billboard {
     position: relative;
     @include clearfix;
@@ -75,10 +60,10 @@
         &:last-child {
             margin-right: 0;
         }
-        @include media($xxmedium){
+        @include media($xxmedium) {
             width: 50%;
         }
-        @include media($xxlarge){
+        @include media($xxlarge) {
             width: 25%;
         }
         img {
@@ -123,9 +108,8 @@
         }
     }
 }
-
 figure.billboard--overlay {
-    background-color: darken($blue, 20%);
+    background-color: darken($blue, 2%);
     img, h2 {
         -webkit-transition: -webkit-transform 0.35s;
         transition: transform 0.35s;
@@ -167,7 +151,6 @@ figure.billboard--overlay {
         transform: translate3d(0, 0, 0);
     }
 }
-
-.contact-now{
-    @include outer-container();
+.contact-now {
+    @include outer-container;
 }

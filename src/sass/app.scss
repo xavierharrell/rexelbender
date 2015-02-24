@@ -7,7 +7,6 @@
 @import "utils/helpers";
 @import "utils/mixins";
 
-
 // @import "base/grid-color";
 @import "base/colors";
 @import "base/media-queries";
@@ -24,3 +23,4 @@
 
 @import "components/button";
 @import "components/well";
+@import "components/_portfolio_blocks.scss";
