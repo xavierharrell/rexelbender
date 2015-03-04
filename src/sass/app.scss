@@ -16,10 +16,14 @@
 @import "partials/layout";
 @import "partials/nav";
 @import "partials/footer";
+@import "partials/comments";
 
 @import "pages/home";
 @import "pages/portfolio";
 @import "pages/portfolio-single";
+@import "pages/lab.scss";
+@import "pages/_lab-list.scss";
 
 @import "components/button";
 @import "components/well";
+@import "components/pagination.scss";

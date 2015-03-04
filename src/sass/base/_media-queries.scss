@@ -1,13 +1,14 @@
-// $small: new-breakpoint(min-width 300px);
-// $xxsmall: new-breakpoint(min-width 320px);
-// $medium: new-breakpoint(min-width 600px);
-// $xxmedium: new-breakpoint(min-width 768px);
-// $large: new-breakpoint(min-width 900px);
-// $xxlarge: new-breakpoint(min-width 1024px);
-// $huge: new-breakpoint(min-width 1200px);
-// $xxhuge: new-breakpoint(min-width 1280px);
-// $xxxhuge: new-breakpoint(min-width 1400px);
+$small: new-breakpoint(min-width 300px);
+$xxsmall: new-breakpoint(min-width 320px);
+$medium: new-breakpoint(min-width 600px);
+$xxmedium: new-breakpoint(min-width 768px);
+$large: new-breakpoint(min-width 900px);
+$xxlarge: new-breakpoint(min-width 1024px);
+$huge: new-breakpoint(min-width 1200px);
+$xxhuge: new-breakpoint(min-width 1280px);
+$xxxhuge: new-breakpoint(min-width 1400px);
 
+$xxsmall: 200px;
 $xsmall: 300px;
 $small: 320px;
 $medium: 600px;
@@ -21,9 +22,5 @@ $huge: 1280px;
 $xhuge: 1400px;
 
 //Wide Desktop
-$mobile-viewport: new-breakpoint(min-width em($small) max-width em($xxmedium));
-$small-viewport: new-breakpoint(min-width em($xxmedium) max-width em($xxlarge));
-
-//start
-$medium-viewport: new-breakpoint(min-width em($xxlarge) max-width em($huge));
-$large-viewport: new-breakpoint(min-width em($huge) + 0.0625);
+$small-viewport: new-breakpoint(min-width em($xxsmall) max-width em($large));
+$medium-viewport: new-breakpoint(min-width em($large + 1));
