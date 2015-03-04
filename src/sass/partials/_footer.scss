@@ -14,26 +14,16 @@ $social: (twitter, $twitter), (vimeo, $vimeo), (behance, $behance), (github, $gi
 .footer {
     background-color: lighten($blue, 2%);
     border-top: 2px solid darken($blue, 5%);
-    padding: 4em;
+    padding: 3em;
     text-align: center;
 }
 
-.social-list {
-    display: block;
-    position: relative;
-    text-align: center;
-    padding-right: 1em;
-    a {
-        float: left;
-        padding: 0 3em 0 0;
+.social--link{
+        display: inline-block;
+    margin-right: 1em;
     }
-}
 
-.social-link {
-    @include centerer;
-}
-
-.social-link {
+.social--link {
     &--twitter {
         color: $twitter;
     }
