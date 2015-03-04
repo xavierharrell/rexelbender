@@ -1,0 +1,26 @@
+.lab-list{
+@include outer-container(90%);
+
+@include media($large){
+	@include outer-container(80%);
+}
+@include media($wide){
+	@include outer-container(50%);
+}
+}
+
+.lab__post{
+	margin-bottom: 4em;
+h2{
+	margin-bottom: 0;
+}
+}
+.lab__post-copy{
+	color: $concrete;
+}
+
+.lab__post__meta{
+	margin: 0;
+	color: $gold;
+	word-spacing: -1px;
+}

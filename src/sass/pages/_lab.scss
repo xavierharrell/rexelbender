@@ -1,0 +1,31 @@
+.lab {
+    @include outer-container(70%);
+    img {
+        max-width: 100%;
+        padding: 0.2em;
+        border: 1px solid $gold;
+    }
+}
+.lab-post{
+   @include media($large){
+     @include span-columns(9);
+   }
+}
+
+.lab-tag {
+    a{
+		&:last-child:after{
+			content: "";
+		}
+
+        &::after {
+            content: ", ";
+        }
+    }
+}
+
+.sidebar{
+    @include media($large){
+        @include span-columns(3);
+    }
+}

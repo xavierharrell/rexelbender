@@ -1,64 +1,108 @@
 .entry-hero {
-    background-size: cover;
-    height: 75%;
-    background-repeat: no-repeat;
-    background-position: center center;
+    width: 100%;
+    height: auto;
 }
 
 .entry-details {
-	padding: 3em 0;
-
+    padding: 3em 0;
 }
 
 .entry-desc {
     @include media($xxmedium) {
-        @include span-columns(8);
+        @include span-columns(5);
     }
 }
 
 .entry-skills {
     @include media($xxmedium) {
         @include span-columns(4);
+        @include shift(1);
     }
 }
 
+/*==========  Portfolio Images and Grid  ==========*/
+
+.entry-images {
+    @include clearfix;
+}
+
+.entry-2-up, .entry-4-up {
+    @include row;
+}
+
 .entry-small {
-    float: left;
-    width: 100%;
-    margin-bottom: 1em;
     figure {
-        display: block;
-        overflow: hidden;
         margin: 0;
-        position: relative;
     }
     img {
         display: block;
-        width: 100%;
+        margin-bottom: 2%;
     }
-    @include media($xxmedium) {
+    @include media($large){
         @include span-columns(6);
-        @include omega(2n);
+    @include omega(2n);
     }
 }
 
 .entry-large {
-	float: left;
-	margin-bottom: 1em;
-
-	figure{
-		display: block;
-		overflow: hidden;
-		position: relative;
-		margin: 0;
-	}
-	img{
-		display: block;
-		width: 100%;
-	}
+    figure {
+        margin: 0;
+    }
+    img {
+        display: block;
+        margin-bottom: 2%;
+    }
 }
+
+/*==========  Prev/Next Entry Selectors  ==========*/
 
 .more-entries {
     @include clearfix;
-    @include outer-container;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    .prev-entry {
+        @include span-columns(6);
+        float: left;
+    }
+    .next-entry {
+        @include span-columns(6);
+        float: right;
+    }
+}
+
+/*==========  Related Entries  ==========*/
+.related-entries {
+    @include clearfix;
+    margin: 2em 0;
+}
+
+.related {
+    @include media($small-viewport) {
+        @include span-columns(6);
+        @include omega(2n);
+    }
+
+    @include media($medium-viewport) {
+        @include span-columns(3);
+        @include omega(4n);
+    }
+}
+
+.related__header {
+    @extend header--small;
+    margin-bottom: 0;
+    &--small {
+        font-size: em(20);
+    }
+}
+
+.related__tag {
+    display: inline-block;
+    font-size: em(14);
+    &:after {
+        content: ', ';
+    }
+    &:last-child:after {
+        content: '';
+    }
 }
