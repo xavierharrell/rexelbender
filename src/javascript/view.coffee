@@ -1,6 +1,6 @@
 _          = require 'underscore'
 Backbone   = require 'backbone'
 Backbone.$ = require 'jquery'
-Classie = require 'classie'
+Modernizr = require 'browsernizr'
 
 module.exports = Backbone.View.extend

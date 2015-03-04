@@ -3,3 +3,6 @@
 var $ = require('jquery');
 var _ = require('underscore');
 var nav = require('./nav.js');
+var classie = require('classie');
+var picturefill = require('picturefill');
+var snap = require('snap');
