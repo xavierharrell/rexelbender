@@ -1,0 +1,22 @@
+{
+  "name": "xavierharrell",
+  "version": "0.0.0",
+  "homepage": "https://github.com/xavierharrell/xavierharrell",
+  "authors": [
+    "Xavier Harrell <xavierharrell@gmail.com>"
+  ],
+  "description": "Dependencies for JS",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/javascript/vendor/bower_components"
+  ],
+  "dependencies": {
+    "picturefill": "~2.2.0",
+    "classie": "~1.0.1",
+    "snap.svg": "~0.3.0"
+  }
+}
