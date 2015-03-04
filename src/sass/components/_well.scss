@@ -8,10 +8,32 @@
 	font-size: $base-font-size * 1.15;
 }
 
+.well__link{
+	padding: em(10) 0;
+	&--viewed{
+		color: red;
+	}
+}
+
 .well{
 	&--blue{
 		background-color: lighten($blue, 20%);
 		border: 2px solid lighten($blue, 35%);
 		color: #fff;
+	}
+&--gold{
+		background-color: lighten($gold, 20%);
+		border: 2px solid lighten($gold, 35%);
+		color: #fff;
+	}
+	&--concrete{
+		background-color: $concrete;
+		border: 2px solid lighten($concrete, 35%);
+		color: #fff;
+	}
+	&--white{
+		background-color: $white;
+		border: 2px solid lighten($concrete, 35%);
+		color: $blue;
 	}
 }

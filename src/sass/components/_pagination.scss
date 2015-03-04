@@ -1,0 +1,27 @@
+.paginate {
+    position: relative;
+    display: block;
+    padding: 4em 0;
+    border-top: 4px solid $concrete;
+    border-bottom: 2px solid $concrete;
+    margin: 3em 0;
+    ul {
+        display: inline-block;
+    }
+    li {
+        display: inline-block;
+    }
+}
+
+.paginate{
+	&--center{
+	text-align: center;
+}
+
+}
+
+.paginate__link {
+    border: 1px solid $blue;
+    padding: em(6) em(12);
+    margin-right: em(6);
+}
