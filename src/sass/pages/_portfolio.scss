@@ -3,7 +3,6 @@
     @include clearfix;
     width: 100%;
     text-align: center;
-    margin-bottom: 5em;
     .portfolio--block {
         margin: 0;
     }
@@ -28,7 +27,7 @@
         img {
             position: relative;
             width: 100%;
-            height: 100%;
+            height: auto;
         }
         figcaption {
             position: absolute;
@@ -43,6 +42,10 @@
             p {
                 @include centerer;
                 padding: 4em 0 0 0;
+            }
+
+            &:last-child{
+                padding-top: 17em;
             }
         }
         figcaption {

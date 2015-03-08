@@ -1,7 +1,7 @@
 $social: (twitter, $twitter), (vimeo, $vimeo), (behance, $behance), (github, $github);
 
 @each $social, $color in $social {
-    .social-link--#{$social} {
+    .social-link__#{$social} {
         color: $color;
         transition: color, .2s, ease-in;
         &:focus,
@@ -18,12 +18,21 @@ $social: (twitter, $twitter), (vimeo, $vimeo), (behance, $behance), (github, $gi
     text-align: center;
 }
 
-.social--link{
-        display: inline-block;
+.social__link{
+    display: inline-block;
     margin-right: 1em;
+    width: 30px;
+    height: 30px;
     }
 
-.social--link {
+.social__link{
+    &--small{
+        height: 30px;
+        width: 30px;
+    }
+}
+
+.social__link {
     &--twitter {
         color: $twitter;
     }
