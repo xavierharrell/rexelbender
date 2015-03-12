@@ -1,17 +1,18 @@
 .portfolio--grid {
     position: relative;
     @include clearfix;
+    margin-top: 4em;
     width: 100%;
     text-align: center;
-    .portfolio--block {
-        margin: 0;
+    h1{
+        margin-bottom: 0.5em;
     }
     figure {
         position: relative;
         float: left;
         margin: 0;
-        height: 400px;
         width: 100%;
+        max-height: 400px;
         cursor: pointer;
         overflow: hidden;
         background: white;
@@ -25,9 +26,11 @@
         }
 
         img {
+            display: block;
             position: relative;
             width: 100%;
-            height: auto;
+            min-height: 100%;
+            overflow: hidden;
         }
         figcaption {
             position: absolute;
@@ -36,16 +39,25 @@
             padding: 1em;
             background: $blue;
             color: white;
-            h3 {
-                @include centerer;
+            h2 {
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                transform: translate(-50%, -40%);
+                margin-bottom: 0;
+                text-transform: uppercase;
             }
             p {
-                @include centerer;
-                padding: 4em 0 0 0;
+                position: absolute;
+                top: 60%;
+                left: 50%;
+                transform: translate(-50%, -60%);
             }
-
-            &:last-child{
-                padding-top: 17em;
+            a{
+                position: absolute;
+                top: 85%;
+                left: 50%;
+                transform: translate(-50%, -85%);
             }
         }
         figcaption {

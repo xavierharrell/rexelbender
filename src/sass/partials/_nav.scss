@@ -3,33 +3,31 @@
 }
 
 .centered-navigation {
-    // $large-screen: em(860) !default;
-    $centered-navigation-padding: 3em;
+    $centered-navigation-padding: 1em;
     $centered-navigation-logo-height: 4em;
     $centered-navigation-background: $gold;
-    $centered-navigation-color: transparentize($blue, 0.3);
-    $centered-navigation-color-hover: white;
-    $centered-navigation-height: 4em;
+    $centered-navigation-color: transparentize($blue, 0.1);
+    $centered-navigation-color-hover: $blue;
+    $centered-navigation-height: 5em;
     $centered-navigation-item-padding: 1em;
-    $centered-navigation-submenu-padding: 1em;
+    $centered-navigation-submenu-padding: 1.5em;
     $centered-navigation-submenu-width: 12em;
     $centered-navigation-item-nudge: 4.2em;
-    // $horizontal-bar-mode: $large-screen;
-    background-color: $blue;
-    border-bottom: 1px solid darken($gold, 6%);
+
+    background-color: $gold;
+    border-bottom: 2px solid darken($blue, 6%);
     min-height: $centered-navigation-height;
     width: 100%;
     z-index: 9999;
+
     .mobile-logo {
         display: inline;
         float: left;
+        width: 75px;
         max-height: $centered-navigation-height;
-        padding-left: $centered-navigation-padding;
-        img {
-            max-height: $centered-navigation-height;
-            padding: .8em 0;
-        }
-        @include media($xxmedium) {
+        padding: 0.2em 0;
+
+        @include media($large) {
             display: none;
         }
     }
@@ -43,7 +41,7 @@
         padding-right: $centered-navigation-submenu-padding;
         text-decoration: none;
         text-transform: uppercase;
-        @include media($xxmedium) {
+        @include media($large) {
             display: none;
         }
 
@@ -60,7 +58,7 @@
     }
     ul.centered-navigation-menu {
         -webkit-transform-style: preserve-3d;
-                clear: both;
+        clear: both;
         display: none;
         margin: 0 auto;
         overflow: visible;
@@ -71,7 +69,7 @@
         &.show {
             display: block;
         }
-        @include media($xxmedium) {
+        @include media($large) {
             display: block;
             text-align: center;
         }
@@ -82,14 +80,15 @@
         }
     }
     ul li.nav-link {
-        background: lighten($blue, 8%);
+        background: lighten($blue, 20%);
         display: block;
         line-height: $centered-navigation-height;
         overflow: hidden;
-        padding-right: $centered-navigation-submenu-padding;
-        text-align: right;
+        padding-right: 1.5em;
+        text-align: center;
         width: 100%;
         z-index: 9999;
+        height: auto;
         a {
             color: $centered-navigation-color;
             display: inline-block;
@@ -103,7 +102,7 @@
                 color: $centered-navigation-color-hover;
             }
         }
-        @include media($xxmedium) {
+        @include media($large) {
             background: transparent;
             display: inline;
             line-height: $centered-navigation-height;
@@ -120,8 +119,10 @@
         }
     }
     .logo img {
-        // margin-bottom: $centered-navigation-logo-height;
-        max-height: 100%;
-        margin-top: 2em;
+        position: absolute;
+        top: 0;
+        left: 20px;
+        height: 75px;
+        display: block;
     }
 }

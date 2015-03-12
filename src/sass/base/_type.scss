@@ -13,4 +13,10 @@
     &--large {
         font-size: $base-font-size * 3.25;
     }
+    &--gold{
+        color: $gold
+    }
+    &--blue{
+        color: $blue;
+    }
 }

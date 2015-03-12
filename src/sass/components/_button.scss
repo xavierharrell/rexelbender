@@ -1,8 +1,8 @@
 .btn{
-	border: 1px solid darken($gold, 5%);
+	border: 1px solid darken($gold, 25%);
 	height: 3em;
 	padding: 0 1.5em;
-	color: white;
+	color: $blue;
 	cursor: pointer;
 	display: inline-block;
 	vertical-align: middle;
@@ -12,9 +12,8 @@
 	overflow: visible;
 	text-decoration: none;
 	white-space: nowrap;
-	background-color: $gold;
+	// background-color: $gold;
 	text-transform: uppercase;
-	@include transition(background-color 0.15s ease-in 0.1s);
 }
 
 .btn{
@@ -29,6 +28,15 @@
 		width: 100%
 	}
 	&--primary{
-		background-color: $gold;
+		// background-color: $gold;
+	}
+	&--secondary{
+		color: white;
+		background-color: $blue;
+		@include transition(background-color 0.05s ease-in);
+		&:hover{
+			background-color: $gold;
+		}
+
 	}
 }
