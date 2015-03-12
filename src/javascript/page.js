@@ -6,3 +6,13 @@ var nav = require('./nav.js');
 var classie = require('classie');
 var picturefill = require('picturefill');
 var snap = require('snap');
+
+(function(){
+	var getBlurb = document.getElementById('blurb');
+	var winWidth = window.innerWidth;
+
+	if (winWidth <= 1450) {
+		classie.toggle(getBlurb, 'hide');
+	};
+
+})(window);
