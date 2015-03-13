@@ -17,53 +17,66 @@
 </head>
 
 <body>
-    <header>
-        <a href="#0" id="logo"><img src="http://placehold.it/30x30" alt="">
-        </a>
-        <nav id="top-nav">
-            <ul>
-                <li><a href="portfolio.html">Portfolio</a>
-                </li>
-                <li><a href="portfolio-single.html">Portfolio Entry</a>
-                </li>
-                <li><a href="about.html">About Me</a>
-                </li>
-                <li><a href="contact.html">Contact</a>
-                </li>
-                <li><a href="contact-thanks.html">Contact Thanks</a>
-                </li>
-            </ul>
-        </nav>
-        <a href="#0" id="menu-trigger"><span class="menu-text">Menu</span><span class="menu-icon"></span></a>
+   <header class="centered-navigation is-fixed" role="banner">
+        <div class="centered-navigation-wrapper">
+            <a href="/" class="mobile-logo">
+                <img src="images/logo-small.svg" alt="Logo image">
+            </a>
+            <a href="#0" id="js-centered-navigation-mobile-menu" class="centered-navigation-mobile-menu">MENU</a>
+            <nav role="navigation">
+                <ul id="js-centered-navigation-menu" class="centered-navigation-menu show">
+                    <li class="nav-link logo">
+                        <a href="/" class="loo">
+                            <img src="images/logo-large.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="lab.html">Lab</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="about.html">About Me</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main class="main-content">
-    <section>
+    <section class="contact">
         <div class="constrain">
-            <h1>Thanks. Will be in contact shortly.</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque repellendus, illo quia, ducimus ut esse labore aut fuga doloribus sapiente optio dolores libero, corporis sit, aspernatur consequatur cumque facere. Laboriosam.</p>
+            <h1 class="header header--large header--blue">Thanks. I'll be in contact shortly.</h1>
+
     </section>
     </main>
-    <footer class="footer">
+   <footer class="footer">
         <ul class="social-list">
-            <li><a class="social-link--twitter" href="#0">Twitter</a>
+            <li class="social__link">
+                <a class="social__link--twitter" href="#0">
+                    <object class="social__link--small" data="images/twitter-icon.svg" type="image/svg+xml"></object>
+                </a>
             </li>
-            <li><a class="social-link--vimeo" href="#0">Vimeo</a>
+            <li class="social__link">
+                <a class="social__link--behance" href="#0">
+                    <object class="social__link--small" data="images/behance-icon.svg" type="image/svg+xml"></object>
+                </a>
             </li>
-            <li><a class="social-link--behance" href="#0">Behance</a>
+            <li class="social__link">
+                <a class="social__link--vimeo" href="#0">
+                    <object class="social__link--small" data="images/vimeo-icon.svg" type="image/svg+xml"></object>
+                </a>
             </li>
-            <li><a class="social-link--github" href="#0">GitHub</a>
+            <li class="social__link">
+                <a class="social__link--github" href="#0">
+                    <object class="social__link--small" data="images/github-icon.svg" type="image/svg+xml"></object>
+                </a>
             </li>
         </ul>
     </footer>
-    </main>
-    <nav id="lateral-nav">
-        <ul class="navigation">
-            <li><a href="#0">Portfolio</a>
-            </li>
-            <li><a href="#0">Contact</a>
-            </li>
-        </ul>
-    </nav>
     <!-- End of Nav -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="global.js"></script>
