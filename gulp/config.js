@@ -17,10 +17,19 @@ module.exports = {
         }
     },
     svg: {
-      src: src + "/images/svg/*.svg",
+      src: src + "/images/svg/sprite/*.svg",
       dest: dest + "/images",
-        options: {
-            multipass: true
+        svgConfig: {
+            "mode": {
+                "css": {
+                    "render": {
+                        "scss": {
+                            "dest": "src/sass/_sprite.scss"
+                        }
+
+                    }
+                }
+            }
         }
     },
     images: {
