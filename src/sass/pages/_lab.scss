@@ -1,18 +1,15 @@
 .lab {
-    @include outer-container(70%);
+    @include outer-container(80%);
+    @include media($large){
+    @include outer-container(60%);
+}
     img {
         max-width: 100%;
-        padding: 0.2em;
-        border: 1px solid $gold;
     }
-}
-.lab-post{
-   @include media($large){
-     @include span-columns(8);
-   }
 }
 
 .lab-tag {
+    margin-bottom: 2em;
     a{
 		&:last-child:after{
 			content: "";
@@ -21,11 +18,5 @@
         &::after {
             content: ", ";
         }
-    }
-}
-
-.sidebar{
-    @include media($large){
-        @include span-columns(4);
     }
 }

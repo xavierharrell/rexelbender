@@ -1,5 +1,8 @@
 .comments{
-	margin: 1em 0;
+	 @include outer-container(80%);
+    @include media($large){
+    @include outer-container(60%);
+}
 }
 
 .comment{
