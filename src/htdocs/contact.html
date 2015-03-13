@@ -20,78 +20,107 @@
     <header class="centered-navigation is-fixed" role="banner">
         <div class="centered-navigation-wrapper">
             <a href="/" class="mobile-logo">
-                <img src="http://placehold.it/75x75" alt="Logo image">
+                <img src="images/logo-small.svg" alt="Logo image">
             </a>
             <a href="#0" id="js-centered-navigation-mobile-menu" class="centered-navigation-mobile-menu">MENU</a>
             <nav role="navigation">
                 <ul id="js-centered-navigation-menu" class="centered-navigation-menu show">
                     <li class="nav-link logo">
-                        <a href="/" class="logo">
-                            <img src="http://placehold.it/225x64" alt="RexelBender">
+                        <a href="/" class="loo">
+                            <img src="images/logo-large.svg" alt="">
                         </a>
                     </li>
-                    <li class="nav-link"><a href="portfolio.html">Portfolio</a>
+                    <li class="nav-link">
+                        <a href="portfolio.html">Portfolio</a>
                     </li>
-                    <li class="nav-link"><a href="lab.html">Lab</a>
+                    <li class="nav-link">
+                        <a href="lab.html">Lab</a>
                     </li>
-                    <li class="nav-link"><a href="about.html">About Me</a>
+                    <li class="nav-link">
+                        <a href="about.html">About Me</a>
                     </li>
-                    <li class="nav-link"><a href="contact.html">Contact</a>
+                    <li class="nav-link">
+                        <a href="contact.html">Contact</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
     <main class="main-content">
-        <section class="constrain padding-big">
-                <h1 class="header--large">Contact Me</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque repellendus, illo quia, ducimus ut esse labore aut fuga doloribus sapiente optio dolores libero, corporis sit, aspernatur consequatur cumque facere. Laboriosam.</p>
-                <form action="">
-                    <label>Name</label>
-                    <input type="text" name="" value="">
-                    <label>Email</label>
-                    <input type="text" name="" value="">
-                    <label>Phone Number</label>
-                    <input type="text" name="" value="">
-                    <label>Subject</label>
-                    <input type="text" name="" value="">
-                    <h2 class="header-medium">What type of project is this?
-                    </h2>
-                    <label>
-                        <input type="checkbox">New Site</label>
-                    <label>
-                        <input type="checkbox" value="Redesign" name="Redesign">Redesign
-                    </label>
-                    <label for="">
-                        <input type="checkbox">Motion Graphics
-                    </label>
-                    <label for="">
-                        <input type="checkbox">Logo
-                    </label>
-                    <label for="">
-                        <input type="checkbox">Web Development
-                    </label>
-                    <label for="">
-                        <input type="checkbox">ExpressionEngine or Craft
-                    </label>
-                    <label>Message</label>
-                    <textarea name="" id="" cols="30" rows="5"></textarea>
-                </form>
+        <section class="padding-big contact">
+            <h1 class="header header--large header--blue">Contact Me</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque repellendus, illo quia, ducimus ut esse labore aut fuga doloribus sapiente optio dolores libero, corporis sit, aspernatur consequatur cumque facere. Laboriosam.</p>
+            <form action="">
+                <label class="header header--small header--blue">Name</label>
+                <input type="text" name="" value="">
+                <label class="header header--small header--blue">Email</label>
+                <input type="text" name="" value="">
+                <label class="header header--small header--blue">Phone Number</label>
+                <input type="text" name="" value="">
+                <label class="header header--small header--blue">Subject</label>
+                <input type="text" name="" value="">
+                <h2 class="header header--medium header--blue">What type of project is this?
+                </h2>
+                <ul class="contact-form-options">
+                    <li>
+                        <input id="checkbox-1" class="cxbx" type="checkbox">
+                        <label for="checkbox-1" class="cxbx--custom">New Site</label>
+                    </li>
+                    <li>
+                        <input id="checkbox-2" class="cxbx" type="checkbox">
+                        <label for="checkbox-2" class="cxbx--custom">Redesign</label>
+                    </li>
+                    <li>
+                        <input id="checkbox-3" class="cxbx" type="checkbox">
+                        <label for="checkbox-3" class="cxbx--custom" for="">Motion Graphics</label>
+                    </li>
+                    <li>
+                        <input id="checkbox-4" class="cxbx" type="checkbox">
+                        <label for="checkbox-4" class="cxbx--custom" for="">Branding </label>
+                    </li>
+                    <li>
+                        <input id="checkbox-5" class="cxbx" name="checkbox-1" type="checkbox">
+                        <label for="checkbox-5" class="cxbx--custom" for="">Logo </label>
+                    </li>
+                    <li>
+                        <input id="checkbox-6" class="cxbx" name="checkbox-1" type="checkbox">
+                        <label for="checkbox-6" class="cxbx--custom" for="">Web Dev </label>
+                    </li>
+                    <li>
+                        <input id="checkbox-7" class="cxbx" name="checkbox-1" type="checkbox">
+                        <label for="checkbox-7" class="cxbx--custom" for="">CMS </label>
+                    </li>
+                </ul>
+                <label class="header header--small header--blue">Message</label>
+                <textarea name="" id="" cols="30" rows="5"></textarea>
+                <input type="submit" class="btn btn--primary">
+            </form>
         </section>
     </main>
     <footer class="footer">
         <ul class="social-list">
-            <li><a class="social-link--twitter" href="#0">Twitter</a>
+            <li class="social__link">
+                <a class="social__link--twitter" href="#0">
+                    <object class="social__link--small" data="images/twitter-icon.svg" type="image/svg+xml"></object>
+                </a>
             </li>
-            <li><a class="social-link--vimeo" href="#0">Vimeo</a>
+            <li class="social__link">
+                <a class="social__link--behance" href="#0">
+                    <object class="social__link--small" data="images/behance-icon.svg" type="image/svg+xml"></object>
+                </a>
             </li>
-            <li><a class="social-link--behance" href="#0">Behance</a>
+            <li class="social__link">
+                <a class="social__link--vimeo" href="#0">
+                    <object class="social__link--small" data="images/vimeo-icon.svg" type="image/svg+xml"></object>
+                </a>
             </li>
-            <li><a class="social-link--github" href="#0">GitHub</a>
+            <li class="social__link">
+                <a class="social__link--github" href="#0">
+                    <object class="social__link--small" data="images/github-icon.svg" type="image/svg+xml"></object>
+                </a>
             </li>
         </ul>
     </footer>
-    </main>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="global.js"></script>
     <script src="main.js"></script>

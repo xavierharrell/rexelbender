@@ -14,7 +14,6 @@ select {
 }
 
 label {
-  font-weight: 600;
   margin: 0.5em 0;
   text-transform: uppercase;
   &.required::after {
@@ -29,25 +28,23 @@ label {
 #{$all-text-inputs},
 select[multiple=multiple],
 textarea {
-  background-color: $base-background-color;
-  border: 1px solid mix(black, black, $weight:20%);
+  background-color: white;
+  border: 1px solid $blue;
   border-radius: 1px;
-  box-shadow: $form-box-shadow;
   box-sizing: border-box;
   font-family: $base-font-family;
   font-size: $base-font-size;
   margin-bottom: 2em;
-  padding: $base-spacing / 3;
+  padding: $base-spacing / 4;
   transition: border-color;
   width: 100%;
 
   &:hover {
-    border-color: darken($base-border-color, 10%);
+    border-color: lighten($blue, 20%);
   }
 
   &:focus {
-    border-color: black;
-    box-shadow: $form-box-shadow-focus;
+    border-color: $gold;
     outline: none;
   }
 }

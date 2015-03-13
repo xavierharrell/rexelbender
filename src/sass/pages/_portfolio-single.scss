@@ -1,10 +1,22 @@
+@mixin category {
+    display: inline-block;
+    font-size: em(14);
+    &:after {
+        content: ', ';
+    }
+    &:last-child:after {
+        content: '';
+    }
+}
+
+
 .entry__hero {
     max-width: 100%;
     min-height: 400px;
 }
 
 .entry__details {
-    padding: 3em 0;
+    padding: 3em 0.5em;
 }
 
 .entry__desc {
@@ -13,11 +25,14 @@
     }
 }
 
-.entry__skills {
-    @include media($large) {
+.entry__skills{
+     @include media($large) {
         @include span-columns(4);
         @include shift(1);
     }
+    &__detail{
+@include category;
+  }
 }
 
 /*==========  Portfolio Images and Grid  ==========*/
@@ -85,7 +100,7 @@
         display: block;
         width: 100%;
         float: left;
-        border: 1px solid $gold;
+        border: 1px solid $blue;
         background-color: white;
         font-weight: 800;
         padding: 1em;
@@ -96,7 +111,7 @@
         }
         &:hover{
             color: white;
-            background-color: $gold;
+            background-color: $blue;
         }
     }
     .prev-entry {
@@ -119,7 +134,8 @@
     margin: 2em 0;
 }
 
-.related {
+.related{
+    margin: 0.5em 0;
     @include media($small-viewport) {
         @include span-columns(6);
         @include omega(2n);
@@ -140,12 +156,5 @@
 }
 
 .related__tag {
-    display: inline-block;
-    font-size: em(14);
-    &:after {
-        content: ', ';
-    }
-    &:last-child:after {
-        content: '';
-    }
+    @include category;
 }
