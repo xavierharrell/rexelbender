@@ -11,11 +11,11 @@ var browserSync  = require('browser-sync');
 gulp.task('svg', function(){
 	return gulp.src(config.src)
 	 .pipe(changed(config.src)) // Ignore unchanged files
-	 .pipe(svgSprite(config.svgConfig))
+	 // .pipe(svgSprite(config.svgConfig))
 	 // .on('error', handleErrors)
-	// .pipe(imagemin(config.options))
+	.pipe(imagemin(config.options))
 	// .pipe(gulp.dest(config.dest))
-	// .pipe(svg2png())
+	.pipe(svg2png())
 	.pipe(gulp.dest(config.dest))
 	.pipe(browserSync.reload({stream:true}));
 });

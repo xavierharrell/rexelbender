@@ -2,6 +2,8 @@ var dest = "./build";
 var src = './src';
 
 module.exports = {
+    src: src,
+    dest: dest,
     browserSync: {
         server: {
             // Serve up our build folder
@@ -17,7 +19,7 @@ module.exports = {
         }
     },
     svg: {
-      src: src + "/images/svg/sprite/*.svg",
+      src: src + "/images/*.svg",
       dest: dest + "/images",
         svgConfig: {
             "mode": {
