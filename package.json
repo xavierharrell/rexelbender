@@ -14,7 +14,7 @@
   "browserify": {
     "transform": [
       "browserify-shim",
-      "coffeeify",
+      "coffeeify"
     ]
   },
   "browserify-shim": {
