@@ -1,15 +1,3 @@
-@mixin category {
-    display: inline-block;
-    font-size: em(14);
-    &:after {
-        content: ', ';
-    }
-    &:last-child:after {
-        content: '';
-    }
-}
-
-
 .entry__hero {
     max-width: 100%;
     min-height: 400px;

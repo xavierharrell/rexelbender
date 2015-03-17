@@ -130,6 +130,15 @@ overflow: hidden;
     }
 }
 
+.portfolio__skill{
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -60%);
+    &__detail{
+        @include category;
+    }
+}
 
 .contact-now {
     @include outer-container;

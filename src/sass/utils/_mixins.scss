@@ -26,3 +26,14 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+@mixin category {
+    display: inline-block;
+    font-size: em(18);
+    &:after {
+        content: ', ';
+    }
+    &:last-child:after {
+        content: '';
+    }
+}
