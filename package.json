@@ -7,23 +7,19 @@
     "url": "git://github.com/xavierharrell/xavierharrell.git"
   },
   "browser": {
-    "underscore": "backbone/node_modules/underscore",
     "Modernizr": "/browsernizr",
     "classie": "./src/javascript/vendor/bower_components/classie/classie.js",
-    "picturefill": "./src/javascript/vendor/bower_components/picturefill/dist/picturefill.min.js",
-    "snap": "./src/javascript/vendor/bower_components/snap.svg/dist/snap.svg-min.js"
+    "picturefill": "./src/javascript/vendor/bower_components/picturefill/dist/picturefill.min.js"
   },
   "browserify": {
     "transform": [
       "browserify-shim",
       "coffeeify",
-      "hbsfy"
     ]
   },
   "browserify-shim": {
     "classie": "classie",
-    "picturefill": "picturefill",
-    "snap": "snap"
+    "picturefill": "picturefill"
   },
   "devDependencies": {
     "browser-sync": "~1.3.6",
@@ -47,8 +43,6 @@
     "gulp-swig": "^0.7.4",
     "gulp-uglify": "^1.0.2",
     "gulp-util": "^3.0.0",
-    "handlebars": "^1.3.0",
-    "hbsfy": "~2.0.0",
     "lodash": "^2.4.1",
     "map-stream": "0.0.5",
     "modernizr": "^3.0.0-alpha.2",
@@ -59,7 +53,6 @@
     "watchify": "^2.2.1"
   },
   "dependencies": {
-    "backbone": "~1.1.2",
     "jquery": "~2.1.0"
   }
 }

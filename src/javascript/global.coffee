@@ -1,4 +1,4 @@
-View =  require './view'
+require 'jquery'
 
 require 'browsernizr/test/svg/inline'
 require 'browsernizr/test/svg/asimg'
