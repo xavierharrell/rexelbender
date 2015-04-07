@@ -83,6 +83,9 @@ overflow: hidden;
             width: 100%;
             min-height: 400px;
             overflow: hidden;
+            &:hover{
+                opacity: 0.5;
+            }
         }
         figcaption {
             position: absolute;
@@ -119,10 +122,9 @@ overflow: hidden;
             height: 100%;
             opacity: 0;
             @include transition(opacity 0.15s ease-in);
-            &:hover{
+            &:hover {
                 opacity: 0.9;
             }
-        }
     }
 }
 
