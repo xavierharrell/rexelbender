@@ -21,28 +21,31 @@ $social: (twitter, $twitter), (vimeo, $vimeo), (behance, $behance), (github, $gi
 .social__link{
     display: inline-block;
     margin-right: 1em;
-    width: 30px;
-    height: 30px;
+    height: 20px;
     }
 
 .social__link{
     &--small{
-        height: 30px;
-        width: 30px;
+        height: 20px;
+        width: 20px;
     }
 }
 
 .social__link {
     &--twitter {
         color: $twitter;
+        background-image: url('images/twitter.png');
     }
     &--vimeo {
         color: $vimeo;
+        background-image: url('images/vimeo.png');
     }
     &--behance {
         color: $behance;
+        background-image: url('images/behance.png');
     }
     &--github {
         color: $github;
+        background-image: url('images/github.png');
     }
 }
