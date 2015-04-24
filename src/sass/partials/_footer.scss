@@ -31,7 +31,9 @@ $social: (twitter, $twitter), (vimeo, $vimeo), (behance, $behance), (github, $gi
 .social__link{
     display: inline-block;
     margin-right: 1em;
-    height: 20px;
+    object{
+        pointer-events: none;
+    }
     }
 
 .social__link{
