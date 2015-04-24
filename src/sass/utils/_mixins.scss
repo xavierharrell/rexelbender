@@ -29,7 +29,7 @@
 
 @mixin category {
     display: inline-block;
-    font-size: em(18);
+    font-size: em(15);
     &:after {
         content: ', ';
     }

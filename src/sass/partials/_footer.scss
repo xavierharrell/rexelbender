@@ -18,6 +18,16 @@ $social: (twitter, $twitter), (vimeo, $vimeo), (behance, $behance), (github, $gi
     text-align: center;
 }
 
+.footer__copyright{
+    background-color: $blue;
+    padding: 0.5em 0;
+    text-align: center;
+    color: white;
+    &__date{
+        font-size: 0.85em;
+        margin: 0;
+    }
+}
 .social__link{
     display: inline-block;
     margin-right: 1em;
