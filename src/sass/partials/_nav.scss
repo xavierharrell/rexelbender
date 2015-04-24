@@ -12,7 +12,7 @@
     $centered-navigation-item-padding: 1em;
     $centered-navigation-submenu-padding: 1.5em;
     $centered-navigation-submenu-width: 12em;
-    $centered-navigation-item-nudge: 4.2em;
+    // $centered-navigation-item-nudge: 3em;
 
     background-color: $gold;
     border-bottom: 2px solid darken($blue, 6%);
@@ -51,7 +51,7 @@
         }
     }
     .centered-navigation-wrapper {
-        @include outer-container;
+        @include outer-container(75em);
         @include clearfix;
         position: relative;
         z-index: 999;
@@ -76,7 +76,7 @@
     }
     .nav-link:first-child {
         @include media($xxmedium) {
-            margin-left: $centered-navigation-item-nudge;
+            margin-left: 0;
         }
     }
     ul li.nav-link {
