@@ -28,19 +28,20 @@ label {
 #{$all-text-inputs},
 select[multiple=multiple],
 textarea {
+  @include appearance(none);
   background-color: white;
   border: 1px solid $blue;
-  border-radius: 1px;
+  border-radius: 3px;
   box-sizing: border-box;
   font-family: $base-font-family;
   font-size: $base-font-size;
   margin-bottom: 2em;
-  padding: $base-spacing / 4;
+  padding: $base-spacing / 8;
   transition: border-color;
   width: 100%;
 
   &:hover {
-    border-color: lighten($blue, 20%);
+    border-color: lighten($gold, 20%);
   }
 
   &:focus {

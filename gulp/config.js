@@ -12,7 +12,7 @@ module.exports = {
     },
     sass: {
         src: src + "/sass/**/*.{sass,scss}",
-        dest: dest,
+        dest: dest + "/assets/css",
         settings: {
             indentedSyntax: true, // Enable .sass syntax!
             imagePath: 'images' // Used by the image-url helper
@@ -20,7 +20,7 @@ module.exports = {
     },
     svg: {
       src: src + "/images/*.svg",
-      dest: dest + "/images",
+      dest: dest + "/assets/images",
         svgConfig: {
             "mode": {
                 "css": {
@@ -36,7 +36,7 @@ module.exports = {
     },
     images: {
         src: src + "/images/**",
-        dest: dest + "/images",
+        dest: dest + "/assets/images",
         options: {
             progressive: true,
             multipass: true
@@ -51,7 +51,7 @@ module.exports = {
         // bundle config in the list below
         bundleConfigs: [{
             entries: src + '/javascript/global.coffee',
-            dest: dest,
+            dest: dest + "/assets/js",
             outputName: 'global.js',
             // Additional file extentions to make optional
             extensions: ['.coffee'],
@@ -61,7 +61,7 @@ module.exports = {
                 // why this is 'backbone/node_modules/underscore' and not 'underscore'
         }, {
             entries: src + '/javascript/page.js',
-            dest: dest,
+            dest: dest + "/assets/js",
             outputName: 'main.js',
             // list of externally available modules to exclude from the bundle
             external: ['jquery']
