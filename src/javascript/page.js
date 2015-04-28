@@ -4,7 +4,8 @@ var classie = require('classie');
 var picturefill = require('picturefill');
 var Modernizr = require('browsernizr');
 var fluidvids = require('fluidvids.js')();
-var layzr = require('layzr.js');
+var echojs = require('echojs');
+
 
 document.createElement( "picture" );
 
@@ -13,4 +14,6 @@ fluidvids.init({
 	players: ['www.youtube.com', 'player.vimeo.com']
 });
 
-var layzr = new layzr({});
+echo.init({
+	offset: 100
+});

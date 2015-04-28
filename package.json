@@ -9,7 +9,8 @@
   "browser": {
     "Modernizr": "/browsernizr",
     "classie": "./src/javascript/vendor/bower_components/classie/classie.js",
-    "picturefill": "./src/javascript/vendor/bower_components/picturefill/dist/picturefill.min.js"
+    "picturefill": "./src/javascript/vendor/bower_components/picturefill/dist/picturefill.min.js",
+    "echojs": "./src/javascript/vendor/bower_components/echojs/dist/echo.min.js"
   },
   "browserify": {
     "transform": [
@@ -19,7 +20,10 @@
   },
   "browserify-shim": {
     "classie": "classie",
-    "picturefill": "picturefill"
+    "picturefill": "picturefill",
+    "echojs": {
+      "exports": "echojs"
+    }
   },
   "devDependencies": {
     "browser-sync": "~1.3.6",
