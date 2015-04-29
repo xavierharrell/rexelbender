@@ -18,5 +18,8 @@
     "picturefill": "~2.2.0",
     "classie": "~1.0.1",
     "snap.svg": "~0.3.0"
+  },
+  "devDependencies": {
+    "echojs": "~1.7.1"
   }
 }
