@@ -68,8 +68,8 @@ module.exports = {
         }]
     },
     production: {
-        cssSrc: dest + '/assets/*.css',
-        jsSrc: dest + '/assets/*.js',
+        cssSrc: dest + '/assets/**/*.css',
+        jsSrc: dest,
         dest: dest + '/production'
     }
 };
