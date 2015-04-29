@@ -69,7 +69,7 @@ module.exports = {
     },
     production: {
         cssSrc: dest + '/assets/**/*.css',
-        jsSrc: dest,
+        jsSrc: dest + '/assets/**/*.js',
         dest: dest + '/production'
     }
 };
