@@ -12,7 +12,7 @@ module.exports = {
     },
     sass: {
         src: src + "/sass/**/*.{sass,scss}",
-        dest: dest + "/assets/css",
+        dest: dest ,
         settings: {
             indentedSyntax: true, // Enable .sass syntax!
             imagePath: 'images' // Used by the image-url helper
@@ -20,7 +20,7 @@ module.exports = {
     },
     svg: {
       src: src + "/images/*.svg",
-      dest: dest + "/assets/images",
+      dest: dest,
         svgConfig: {
             "mode": {
                 "css": {
