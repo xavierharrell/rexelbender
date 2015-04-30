@@ -20,7 +20,7 @@
         @include shift(1);
     }
     &__detail{
-@include category;
+     @include category;
   }
 }
 
@@ -43,9 +43,12 @@
     float: left;
     margin-bottom: 0.5em;
     padding: 0 0.5em 0;
+    figure{
+        margin: 0;
+    }
     img {
         display: block;
-        margin-bottom: 2%;
+        margin-bottom: 0.5%;
         max-width: 100%;
     }
     p{
@@ -62,12 +65,15 @@
     @include row;
     position: relative;
     margin-bottom: 0.5em;
-    margin: 0;
     padding: 0 0.5em 0;
+    display: block;
+    figure{
+        margin: 0;
+    }
     img {
         display: block;
         max-width: 100%;
-        margin-bottom: 2%;
+        margin-bottom: 0.5%;
     }
 }
 
