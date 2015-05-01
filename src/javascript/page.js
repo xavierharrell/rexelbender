@@ -15,5 +15,4 @@ fluidvids.init({
 });
 
 echo.init({
-	offset: 100
 });
