@@ -3,25 +3,30 @@
     padding-top: 5em;
     position: relative;
 }
+
 .constrain {
     @include outer-container(90%);
-    @include media($xxmedium) {
+    @include media($large) {
         @include outer-container(80%);
     }
+    @include media($xxlarge){
+        @include outer-container(70%);
+    };
+    // @include media($wide) {
+    //     @include outer-container(60%);
+    // }
 }
 
 .padding-big {
     padding: 3em 0 0;
 }
 
-
-
-.about{
-	margin: 4em 0;
+.about {
+    margin: 4em 0;
 }
 
-.hero-image{
-    img{
+.hero-image {
+    img {
         max-width: 100%;
         height: 100%;
     }

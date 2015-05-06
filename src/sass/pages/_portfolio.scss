@@ -60,6 +60,9 @@
                 transform: translate(-50%, -85%);
             }
         }
+        figcaption, figcaption h2, figcaption p, figcaption a{
+            backface-visibility: hidden;
+        }
         figcaption {
             width: 100%;
             height: 100%;

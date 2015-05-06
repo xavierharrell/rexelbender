@@ -14,7 +14,7 @@ $social: (twitter, $twitter), (vimeo, $vimeo), (behance, $behance), (github, $gi
 .footer {
     background-color: lighten($gold, 2%);
     border-top: 2px solid darken($blue, 5%);
-    padding: 3em;
+    padding: 1.5em 0;
     text-align: center;
 }
 
@@ -38,8 +38,8 @@ $social: (twitter, $twitter), (vimeo, $vimeo), (behance, $behance), (github, $gi
 
 .social__link{
     &--small{
-        height: 20px;
-        width: 20px;
+        height: 40px;
+        width: 40px;
     }
 }
 

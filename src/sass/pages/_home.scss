@@ -1,26 +1,26 @@
 /* Large Image Hero */
-.hero-wrap{
+
+.hero-wrap {
     position: relative;
     display: block;
 }
 
-.hero{
-width: 100%;
-height: auto;
-overflow: hidden;
+.hero {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
 }
 
-.hero__blurb{
+.hero__blurb {
     @include centerer;
     width: 20%;
 }
 
-.hero__blurb__header{
+.hero__blurb__header {
     font-size: $base-font-size * 2;
     color: $blue;
     word-spacing: em(-2);
 }
-
 /* Selling Points */
 
 .selling-points {
@@ -34,13 +34,9 @@ overflow: hidden;
         }
     }
 }
-
 /* Skill Points */
 
 .skills {
-    @include outer-container;
-    @include clearfix;
-    position: relative;
     .skill-point {
         display: block;
         @include span-columns(6);
@@ -51,7 +47,6 @@ overflow: hidden;
         }
     }
 }
-
 /* Portfolio Billboard */
 
 .portfolio-billboard {
@@ -72,18 +67,16 @@ overflow: hidden;
         @include media($xxmedium) {
             width: 50%;
         }
-
         @include media($xxlarge) {
             width: 25%;
         }
-
         img {
             display: block;
             position: relative;
             width: 100%;
             min-height: 400px;
             overflow: hidden;
-            &:hover{
+            &:hover {
                 opacity: 0.5;
             }
         }
@@ -110,31 +103,37 @@ overflow: hidden;
                 left: 50%;
                 transform: translate(-50%, -60%);
             }
-            a{
+            a {
                 position: absolute;
                 top: 85%;
                 left: 50%;
                 transform: translate(-50%, -85%);
             }
         }
-        figcaption{
+        figcaption,
+        figcaption h2,
+        figcaption p,
+        figcaption a {
+            backface-visibility: hidden;
+        }
+        figcaption {
             width: 100%;
             height: 100%;
             opacity: 0;
             @include transition(opacity 0.15s ease-in);
-
             &:hover {
-opacity: 0.9;
+                opacity: 0.9;
+            }
         }
     }
 }
-}
-.portfolio__skill{
-            position: absolute;
-            top: 60%;
-            left: 50%;
-            transform: translate(-50%, -60%);
-    &__detail{
+
+.portfolio__skill {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    &__detail {
         @include category;
     }
 }
@@ -142,14 +141,14 @@ opacity: 0.9;
 .contact-now {
     @include outer-container;
     padding-bottom: 3em;
-.choice{
-    display: block;
-    margin: 0 1em;
-    &:after{
-        content: 'or'
+    .choice {
+        display: block;
+        margin: 0 1em;
+        &:after {
+            content: 'or'
+        }
+        @include media($xxmedium) {
+            display: inline-block;
+        }
     }
-    @include media($xxmedium){
-        display: inline-block;
-    }
-}
 }
