@@ -24,16 +24,14 @@
 /* Selling Points */
 
 .selling-points {
-    @include outer-container;
-    @include clearfix;
-    position: relative;
-    .selling-point {
+}
+.selling-point {
         text-align: center;
         @include media($xxmedium) {
             @include span-columns(4);
         }
     }
-}
+
 /* Skill Points */
 
 .skills {
