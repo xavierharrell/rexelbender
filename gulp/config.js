@@ -39,8 +39,13 @@ module.exports = {
         dest: dest + "/assets/images",
         options: {
             progressive: true,
-            multipass: true
-        }
+            multipass: false,
+            svgoPlugins: [
+                {removeUselessStrokeAndFill: false},
+                {removeViewBox: false},
+                {cleanupIDs: false}
+                            ]
+                            }
     },
     markup: {
         src: src + "/htdocs/**",
