@@ -23,13 +23,11 @@ module.exports = {
         dest: dest + "/assets/images/sprite",
         sprite: {
             mode: {
-                css: {
-                    sprite: "social.svg",
+                symbol: {
                     bust: true,
-                    render: {
-                        scss: {
-                            dest: "assets/sass/_icon.scss"
-                        }
+                    sprite "social",
+                    svg: {
+                        namespaceIDs: false
                     }
                 }
             }
@@ -53,7 +51,7 @@ module.exports = {
     svgpng: {
         src: src + "/images" + dest + "/assets/images/sprite",
         dest: dest + "assets/images"
-    }
+    },
     markup: {
         src: src + "/htdocs/**",
         dest: dest
