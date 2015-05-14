@@ -19,34 +19,41 @@ module.exports = {
         }
     },
     svg: {
-      src: src + "/images/*.svg",
-      dest: dest + "/assets/images",
-        svgConfig: {
-            "mode": {
-                "css": {
-                    "render": {
-                        "scss": {
-                            "dest": "src/sass/_sprite.scss"
+        src: src + "/images/sprite/*.svg",
+        dest: dest + "/assets/images/sprite",
+        sprite: {
+            mode: {
+                css: {
+                    sprite: "social.svg",
+                    bust: true,
+                    render: {
+                        scss: {
+                            dest: "assets/sass/_icon.scss"
                         }
-
                     }
                 }
             }
         }
     },
     images: {
-        src: src + "/images/**",
+        src: src + "/images/*",
         dest: dest + "/assets/images",
         options: {
             progressive: true,
-            multipass: false,
-            svgoPlugins: [
-                {removeUselessStrokeAndFill: false},
-                {removeViewBox: false},
-                {cleanupIDs: false}
-                            ]
-                            }
+            multipass: true,
+            svgoPlugins: [{
+                removeUselessStrokeAndFill: false
+            }, {
+                removeViewBox: false
+            }, {
+                cleanupIDs: false
+            }]
+        }
     },
+    svgpng: {
+        src: src + "/images" + dest + "/assets/images/sprite",
+        dest: dest + "assets/images"
+    }
     markup: {
         src: src + "/htdocs/**",
         dest: dest
@@ -62,8 +69,8 @@ module.exports = {
             extensions: ['.coffee'],
             // list of modules to make require-able externally
             require: ['browsernizr', 'jquery']
-                // See https://github.com/greypants/gulp-starter/issues/87 for note about
-                // why this is 'backbone/node_modules/underscore' and not 'underscore'
+            // See https://github.com/greypants/gulp-starter/issues/87 for note about
+            // why this is 'backbone/node_modules/underscore' and not 'underscore'
         }, {
             entries: src + '/javascript/page.js',
             dest: dest + "/assets/js",
