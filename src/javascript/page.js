@@ -6,12 +6,10 @@ var Modernizr = require('browsernizr');
 var fluidvids = require('fluidvids.js')();
 var lazysize = require('lazysizes');
 
+
 document.createElement( "picture" );
 
 fluidvids.init({
 	selector: ['iframe', 'object'],
 	players: ['www.youtube.com', 'player.vimeo.com']
 });
-
-
-

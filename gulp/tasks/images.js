@@ -1,6 +1,7 @@
 var changed    = require('gulp-changed');
 var gulp       = require('gulp');
 var imagemin   = require('gulp-imagemin');
+var svgo = require('imagemin-svgo');
 var config     = require('../config').images;
 var browserSync  = require('browser-sync');
 

@@ -1,0 +1,45 @@
+$social: (twitter, $twitter), (vimeo, $vimeo), (behance, $behance), (github, $github);
+
+@each $social, $color in $social {
+    .social-link__#{$social} {
+        color: $color;
+        transition: color, .2s, ease-in;
+        &:focus,
+        &:hover {
+            color: darken($color, 20%);
+        }
+    }
+}
+.social__link {
+    display: inline-block;
+    margin-right: 1em;
+    object {
+        pointer-events: none;
+    }
+}
+
+.social__link {
+    &--small {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+.social__link {
+    &--twitter {
+        color: $twitter;
+        background-image: url('/assets/images/twitter.png');
+    }
+    &--vimeo {
+        color: $vimeo;
+        background-image: url('/assets/images/vimeo.png');
+    }
+    &--behance {
+        color: $behance;
+        background-image: url('/assets/images/behance.png');
+    }
+    &--github {
+        color: $github;
+        background-image: url('/assets/images/github.png');
+    }
+}

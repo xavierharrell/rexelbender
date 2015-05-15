@@ -19,28 +19,49 @@ module.exports = {
         }
     },
     svg: {
-      src: src + "/images/*.svg",
-      dest: dest + "/assets/images",
-        svgConfig: {
-            "mode": {
-                "css": {
-                    "render": {
-                        "scss": {
-                            "dest": "src/sass/_sprite.scss"
+        src: src + "/images/sprite/*.svg",
+        dest: dest + "/assets/images/sprite",
+        sprite: {
+            mode: {
+                symbol: {
+                    bust: true,
+                    dest: "/build/assets/images",
+                    transform: [{
+                        svgo: {
+                            plugins: [{
+                                cleanupIDs: false
+                            }]
                         }
-
-                    }
+                    }],
+                    svg: {
+                        namespaceIDs: false
+                    },
+                    render: {
+                        scss: true,
+                        scss: {dest: "_social.scss"}
+                    },
                 }
             }
         }
     },
     images: {
-        src: src + "/images/**",
+        src: src + "/images/*",
         dest: dest + "/assets/images",
         options: {
             progressive: true,
-            multipass: true
+            multipass: true,
+            svgoPlugins: [{
+                removeUselessStrokeAndFill: false
+            }, {
+                removeViewBox: false
+            }, {
+                cleanupIDs: true
+            }]
         }
+    },
+    svgpng: {
+        src: src + "/images/*.svg",
+        dest: dest + "/assets/images"
     },
     markup: {
         src: src + "/htdocs/**",
