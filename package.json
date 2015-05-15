@@ -10,10 +10,6 @@
     "Modernizr": "/browsernizr",
     "classie": "./src/javascript/vendor/bower_components/classie/classie.js",
     "picturefill": "./src/javascript/vendor/bower_components/picturefill/dist/picturefill.min.js",
-<<<<<<< HEAD
-    "echojs": "./src/javascript/vendor/bower_components/echojs/dist/echo.min.js",
-=======
->>>>>>> svg
     "snap": "./src/javascript/vendor/bower_components/snap.svg/dist/snap.svg-min.js"
   },
   "browserify": {
@@ -25,14 +21,7 @@
   "browserify-shim": {
     "classie": "classie",
     "picturefill": "picturefill",
-<<<<<<< HEAD
-    "snap": "snap",
-    "echojs": {
-      "exports": "echojs"
-    }
-=======
     "snap": "snap"
->>>>>>> svg
   },
   "devDependencies": {
     "browser-sync": "~1.3.6",
