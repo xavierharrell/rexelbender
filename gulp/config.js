@@ -25,10 +25,21 @@ module.exports = {
             mode: {
                 symbol: {
                     bust: true,
-                    sprite "social",
+                    dest: "/build/assets/images",
+                    transform: [{
+                        svgo: {
+                            plugins: [{
+                                cleanupIDs: false
+                            }]
+                        }
+                    }],
                     svg: {
                         namespaceIDs: false
-                    }
+                    },
+                    render: {
+                        scss: true,
+                        scss: {dest: "_social.scss"}
+                    },
                 }
             }
         }
@@ -44,13 +55,13 @@ module.exports = {
             }, {
                 removeViewBox: false
             }, {
-                cleanupIDs: false
+                cleanupIDs: true
             }]
         }
     },
     svgpng: {
-        src: src + "/images" + dest + "/assets/images/sprite",
-        dest: dest + "assets/images"
+        src: src + "/images/*.svg",
+        dest: dest + "/assets/images"
     },
     markup: {
         src: src + "/htdocs/**",
@@ -67,8 +78,8 @@ module.exports = {
             extensions: ['.coffee'],
             // list of modules to make require-able externally
             require: ['browsernizr', 'jquery']
-            // See https://github.com/greypants/gulp-starter/issues/87 for note about
-            // why this is 'backbone/node_modules/underscore' and not 'underscore'
+                // See https://github.com/greypants/gulp-starter/issues/87 for note about
+                // why this is 'backbone/node_modules/underscore' and not 'underscore'
         }, {
             entries: src + '/javascript/page.js',
             dest: dest + "/assets/js",
