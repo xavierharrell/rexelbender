@@ -25,6 +25,8 @@ module.exports = {
             mode: {
                 symbol: {
                     bust: true,
+                    inline: true,
+                    symbol: true,
                     dest: "/build/assets/images",
                     transform: [{
                         svgo: {
@@ -36,21 +38,20 @@ module.exports = {
                     svg: {
                         namespaceIDs: false
                     },
-                    render: {
-                        scss: true,
-                        scss: {dest: "_social.scss"}
-                    },
+                    example: true,
+                    template: '',
+                    dest: ''
                 }
             }
         }
     },
     images: {
-        src: src + "/images/*",
+        src: src + "/images/**",
         dest: dest + "/assets/images",
         options: {
             progressive: true,
             multipass: true,
-            svgoPlugins: [{removeDesc: false}, {removeTitle: false}, {removeUselessDefs: true}, {removeUselessStrokeAndFill: false}, {removeViewBox: false}, {removeUnknownsAndDefaults: true}]
+            svgoPlugins: [{removeDesc: false}, {removeTitle: false}, {removeUselessDefs: true}, {removeUselessStrokeAndFill: false}, {removeViewBox: false}, {removeUnknownsAndDefaults: true}, {cleanupIDs: false}]
         }
     },
     svgpng: {
