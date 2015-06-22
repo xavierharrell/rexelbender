@@ -50,13 +50,8 @@ module.exports = {
         options: {
             progressive: true,
             multipass: true,
-            svgoPlugins: [{
-                removeUselessStrokeAndFill: false
-            }, {
-                removeViewBox: false
-            }, {
-                cleanupIDs: true
-            }]
+            svgoPlugins: [
+            {removeUnknownsAndDefaults: false}]
         }
     },
     svgpng: {
