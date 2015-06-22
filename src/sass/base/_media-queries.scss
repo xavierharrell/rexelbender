@@ -22,5 +22,7 @@ $huge: 1280px;
 $xhuge: 1420px;
 
 //Wide Desktop
-$small-viewport: new-breakpoint(min-width em($xxsmall) max-width em($large));
+$tiny-viewport: new-breakpoint(min-width em($medium) max-width em($wide));
+$small-viewport: new-breakpoint(min-width em($xxmedium + 1));
 $medium-viewport: new-breakpoint(min-width em($large + 1));
+$large-viewport: new-breakpoint(min-width em($wide +1));
