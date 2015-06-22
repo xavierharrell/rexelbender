@@ -10,12 +10,29 @@ $social: (twitter, $twitter), (vimeo, $vimeo), (behance, $behance), (github, $gi
         }
     }
 }
-.social__link {
+
+.social__link{
     display: inline-block;
-    margin-right: 1em;
-    object {
-        pointer-events: none;
-    }
+    margin-right: 0.5em;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+a.social__link {
+    position: relative;
+}
+
+a.social__link:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+object{
+    width: 100%;
 }
 
 .social__link {
@@ -25,21 +42,30 @@ $social: (twitter, $twitter), (vimeo, $vimeo), (behance, $behance), (github, $gi
     }
 }
 
+.social__link{
+    &--fill{
+        fill: $gold;
+    }
+}
+
 .social__link {
     &--twitter {
-        color: $twitter;
+        fill: $twitter;
         background-image: url('/assets/images/twitter.png');
+        &:hover{
+            fill: $blue;
+        }
     }
     &--vimeo {
-        color: $vimeo;
+        fill: $vimeo;
         background-image: url('/assets/images/vimeo.png');
     }
     &--behance {
-        color: $behance;
+        fill: $behance;
         background-image: url('/assets/images/behance.png');
     }
     &--github {
-        color: $github;
+        fill: $github;
         background-image: url('/assets/images/github.png');
     }
 }
