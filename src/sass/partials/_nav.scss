@@ -45,7 +45,7 @@
 
         &:focus,
         &:hover {
-            color: lighten($blue, 10%);
+            color: darken($blue, 10%);
         }
     }
     .centered-navigation-wrapper {
@@ -81,10 +81,16 @@
         }
     }
     .nav-link:first-child {
-        @include media($large) {
-            margin-left: 10em;
+        @include media($large){
+            margin-left: 14em;
         }
-        @include media($huge) {
+        @include media($xxlarge){
+            margin-left: 14em;
+        }
+        @include media($huge){
+            margin-left: 8em;
+        }
+        @include media($xhuge){
             margin-left: 0em;
         }
     }
