@@ -129,12 +129,12 @@
 
 .related{
     margin: 0.5em 0;
-    @include media($small-viewport) {
+    @include media($related-small) {
         @include span-columns(6);
         @include omega(2n);
     }
 
-    @include media($medium-viewport) {
+    @include media($related-large) {
         @include span-columns(3);
         @include omega(4n);
     }

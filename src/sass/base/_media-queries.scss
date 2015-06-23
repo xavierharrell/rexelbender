@@ -26,3 +26,6 @@ $tiny-viewport: new-breakpoint(min-width em($medium) max-width em($wide));
 $small-viewport: new-breakpoint(min-width em($xxmedium + 1));
 $medium-viewport: new-breakpoint(min-width em($large + 1));
 $large-viewport: new-breakpoint(min-width em($wide +1));
+
+$related-small: new-breakpoint(min-width em($xxsmall) max-width em($large));
+$related-large: new-breakpoint(min-width em($large +1));
