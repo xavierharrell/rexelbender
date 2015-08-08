@@ -1,8 +1,3 @@
-// var $ = require('jquery');
-// var snap = require('snap');
+var snap = require('snapsvg');
 
-// var s = Snap("#roxy");
 
-// var sun = s.select("#webdev");
-
-// console.log(sun);

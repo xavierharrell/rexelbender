@@ -1,8 +1,9 @@
 @import "base/reset";
 @import "base/colors";
-@import "vendor/bourbon/bourbon";
+
+@import "bourbon";
 @import "vendor/base/grid-settings";
-@import "vendor/neat/neat";
+@import "neat";
 @import "vendor/base/base";
 
 @import "utils/helpers";

@@ -1,16 +1,13 @@
 {
   "name": "xavier-harrell-site-v.2.0",
-  "version": "0.1.1",
+  "version": "0.1.4",
   "description": "New portfolio site",
   "repository": {
     "type": "git",
     "url": "git://github.com/xavierharrell/xavierharrell.git"
   },
   "browser": {
-    "Modernizr": "/browsernizr",
-    "classie": "./src/javascript/vendor/bower_components/classie/classie.js",
-    "picturefill": "./src/javascript/vendor/bower_components/picturefill/dist/picturefill.min.js",
-    "snap": "./src/javascript/vendor/bower_components/snap.svg/dist/snap.svg-min.js"
+    "Modernizr": "./node_modules/modernizr/src/Modernizr.js"
   },
   "browserify": {
     "transform": [
@@ -19,16 +16,15 @@
     ]
   },
   "browserify-shim": {
-    "classie": "classie",
-    "picturefill": "picturefill",
-    "snap": "snap"
-  },
+    "modernizr": "Modernizr"
+    },
   "devDependencies": {
     "browser-sync": "^2.8.2",
     "browserify": "^8.0.2",
     "browserify-shim": "^3.8.2",
     "browsernizr": "^1.0.2",
     "coffeeify": "~0.7.0",
+    "desandro-classie": "^1.0.1",
     "fluidvids.js": "toddmotto/fluidvids",
     "gulp": "^3.8.7",
     "gulp-autoprefixer": "^2.0.0",
@@ -54,13 +50,17 @@
     "lodash": "^2.4.1",
     "map-stream": "0.0.5",
     "modernizr": "^3.0.0-alpha.2",
+    "picturefill": "^2.3.1",
     "pretty-hrtime": "~0.2.1",
     "require-dir": "^0.1.0",
+    "snapsvg": "^0.4.0",
     "vinyl": "^0.4.6",
     "vinyl-source-stream": "~0.1.1",
     "watchify": "^2.2.1"
   },
   "dependencies": {
+    "bourbon": "^4.2.3",
+    "bourbon-neat": "^1.7.2",
     "jquery": "~2.1.0"
   }
 }

@@ -15,7 +15,10 @@ module.exports = {
         dest: dest + "/assets/css",
         settings: {
             indentedSyntax: true, // Enable .sass syntax!
-            imagePath: 'images' // Used by the image-url helper
+            imagePath: 'images', // Used by the image-url helper
+            includePaths: [
+            "node_modules/bourbon/app/assets/stylesheets",
+            "node_modules/bourbon-neat/app/assets/stylesheets"]
         }
     },
     svg: {
@@ -76,7 +79,7 @@ module.exports = {
                 // See https://github.com/greypants/gulp-starter/issues/87 for note about
                 // why this is 'backbone/node_modules/underscore' and not 'underscore'
         }, {
-            entries: src + '/javascript/page.js',
+            entries: src + '/javascript/main.js',
             dest: dest + "/assets/js",
             outputName: 'main.js',
             // list of externally available modules to exclude from the bundle
