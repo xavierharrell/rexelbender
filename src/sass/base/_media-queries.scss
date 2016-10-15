@@ -18,10 +18,12 @@ $xxlarge: 1025px;
 $wide: 1200px;
 $huge: 1280px;
 
-//Desktop
+/* Desktop */
+
 $xhuge: 1420px;
 
-//Wide Desktop
+/* Wide Desktop */
+
 $tiny-viewport: new-breakpoint(min-width em($medium) max-width em($wide));
 $small-viewport: new-breakpoint(min-width em($xxmedium + 1));
 $medium-viewport: new-breakpoint(min-width em($large + 1));
