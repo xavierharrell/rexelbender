@@ -163,14 +163,6 @@ image-container > *{
     }
 }
 
-.related__header {
-    @extend header--small;
-    margin-bottom: 0;
-    &--small {
-        font-size: em(20);
-    }
-}
-
 .related__tag {
     @include category;
 }
