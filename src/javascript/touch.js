@@ -1,4 +1,4 @@
-var classie = require('classie');
+var classie = require('desandro-classie');
 var Modernizr = require('browsernizr');
 
 (function () {
