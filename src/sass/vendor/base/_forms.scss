@@ -30,7 +30,7 @@ select[multiple=multiple],
 textarea {
   @include appearance(none);
   background-color: white;
-  border: 1px solid $blue;
+  border: 2px solid $blue;
   border-radius: 3px;
   box-sizing: border-box;
   font-family: $base-font-family;
